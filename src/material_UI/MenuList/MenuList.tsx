@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
+import Zoom from '@mui/material/Zoom';
 
 export const MenuList = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -23,6 +23,8 @@ export const MenuList = () => {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
                 color={'inherit'}
+                size={'large'}
+                style={{padding: 2}}
             >
                 Меню
             </Button>
@@ -34,11 +36,12 @@ export const MenuList = () => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                TransitionComponent={Fade}
+                TransitionComponent={Zoom}
             >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                <MenuItem onClick={handleClose}>Главная</MenuItem>
+                <MenuItem onClick={handleClose}>Обучение</MenuItem>
+                <MenuItem onClick={handleClose}>Прайс на услуги</MenuItem>
+                <MenuItem onClick={handleClose}>Товары в продаже</MenuItem>
             </Menu>
         </div>
     );

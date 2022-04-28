@@ -1,14 +1,27 @@
 import React from 'react';
-import {Header} from '../material_UI/Header/Header';
-import {images} from '../data/images';
+import {Header} from './Header/Header';
+import {BigBlock} from './BigBlock/BigBlock';
+import {Introduction} from './Introduction/Introduction';
 import styles from './App.module.scss'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#053543',
+        },
+    },
+});
 
 export const App = () => {
 
-    return <div>
+    return  <ThemeProvider theme={theme}>
+    <div className={styles.container}>
         <Header/>
-        <div className={styles.image}>
-            <img src={images.anna} alt={'author'}/>
-        </div>
+        <Introduction/>
+        {/*<BigBlock/>*/}
+        {/*<BigBlock/>*/}
+        {/*<BigBlock/>*/}
     </div>
+    </ThemeProvider>
 }
