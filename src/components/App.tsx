@@ -1,6 +1,5 @@
 import React from 'react';
 import {Header} from './Header/Header';
-import {BigBlock} from './BigBlock/BigBlock';
 import {Introduction} from './Introduction/Introduction';
 import styles from './App.module.scss'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -19,9 +18,6 @@ export const App = () => {
     <div className={styles.container}>
         <Header/>
         <Introduction/>
-        {/*<BigBlock/>*/}
-        {/*<BigBlock/>*/}
-        {/*<BigBlock/>*/}
     </div>
     </ThemeProvider>
 }
