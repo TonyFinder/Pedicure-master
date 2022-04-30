@@ -2,7 +2,7 @@ import React from 'react';
 import {Header} from './Header/Header';
 import {Introduction} from './Introduction/Introduction';
 import styles from './App.module.scss'
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {createTheme, ThemeProvider} from '@mui/material/styles';
 
 const theme = createTheme({
     palette: {

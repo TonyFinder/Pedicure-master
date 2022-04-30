@@ -1,9 +1,9 @@
 import anna from '../images/anna.jpg';
 import nails1 from '../images/1.jpg';
-import nails2 from '../images/3.jpg';
+import nails2 from '../images/2.jpg';
 import nails3 from '../images/8.jpg';
-import nails4 from '../images/5.jpg';
-import nails5 from '../images/2.jpg';
+import nails4 from '../images/9.jpg';
+import nails5 from '../images/12.jpg';
 
 export const images = {
     anna,
