@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Pedicure_Goods_Final_Version/static/css/main.812c8c99.css",
-    "main.js": "/Pedicure_Goods_Final_Version/static/js/main.2d2d6258.js",
+    "main.css": "/Pedicure_Goods_Final_Version/static/css/main.aff586b8.css",
+    "main.js": "/Pedicure_Goods_Final_Version/static/js/main.6bbff3c1.js",
     "static/js/787.28cb0dcd.chunk.js": "/Pedicure_Goods_Final_Version/static/js/787.28cb0dcd.chunk.js",
+    "static/media/9.jpg": "/Pedicure_Goods_Final_Version/static/media/9.de057f8b1e17c86d8198.jpg",
+    "static/media/12.jpg": "/Pedicure_Goods_Final_Version/static/media/12.92d6a98b31df92126ca6.jpg",
     "static/media/1.jpg": "/Pedicure_Goods_Final_Version/static/media/1.564fd7db86d51ed30e45.jpg",
-    "static/media/5.jpg": "/Pedicure_Goods_Final_Version/static/media/5.90342006ac9ca813bf76.jpg",
-    "static/media/3.jpg": "/Pedicure_Goods_Final_Version/static/media/3.2d0bbb4bc343f7266992.jpg",
     "static/media/8.jpg": "/Pedicure_Goods_Final_Version/static/media/8.eafdf460d6dd7ad2684c.jpg",
     "static/media/2.jpg": "/Pedicure_Goods_Final_Version/static/media/2.7b1b5cf64f6b52de198a.jpg",
     "static/media/anna.jpg": "/Pedicure_Goods_Final_Version/static/media/anna.ff96af59eaae95a2cd6a.jpg",
     "index.html": "/Pedicure_Goods_Final_Version/index.html",
-    "main.812c8c99.css.map": "/Pedicure_Goods_Final_Version/static/css/main.812c8c99.css.map",
-    "main.2d2d6258.js.map": "/Pedicure_Goods_Final_Version/static/js/main.2d2d6258.js.map",
+    "main.aff586b8.css.map": "/Pedicure_Goods_Final_Version/static/css/main.aff586b8.css.map",
+    "main.6bbff3c1.js.map": "/Pedicure_Goods_Final_Version/static/js/main.6bbff3c1.js.map",
     "787.28cb0dcd.chunk.js.map": "/Pedicure_Goods_Final_Version/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.812c8c99.css",
-    "static/js/main.2d2d6258.js"
+    "static/css/main.aff586b8.css",
+    "static/js/main.6bbff3c1.js"
   ]
 }
