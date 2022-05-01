@@ -3,6 +3,7 @@ import {Header} from './Header/Header';
 import {Introduction} from './Introduction/Introduction';
 import styles from './App.module.scss'
 import {createTheme, ThemeProvider} from '@mui/material/styles';
+import {Footer} from './Footer/Footer';
 
 const theme = createTheme({
     palette: {
@@ -14,10 +15,11 @@ const theme = createTheme({
 
 export const App = () => {
 
-    return  <ThemeProvider theme={theme}>
-    <div className={styles.container}>
-        <Header/>
-        <Introduction/>
-    </div>
+    return <ThemeProvider theme={theme}>
+        <div className={styles.container}>
+            <Header/>
+            <Introduction/>
+            <Footer/>
+        </div>
     </ThemeProvider>
 }
