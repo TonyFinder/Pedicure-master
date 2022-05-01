@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/Pedicure_Goods_Final_Version/static/css/main.aff586b8.css",
-    "main.js": "/Pedicure_Goods_Final_Version/static/js/main.6bbff3c1.js",
+    "main.css": "/Pedicure_Goods_Final_Version/static/css/main.08cd4a83.css",
+    "main.js": "/Pedicure_Goods_Final_Version/static/js/main.8da830ef.js",
     "static/js/787.28cb0dcd.chunk.js": "/Pedicure_Goods_Final_Version/static/js/787.28cb0dcd.chunk.js",
+    "static/media/14.jpg": "/Pedicure_Goods_Final_Version/static/media/14.cd7e48d3952f183562ba.jpg",
     "static/media/9.jpg": "/Pedicure_Goods_Final_Version/static/media/9.de057f8b1e17c86d8198.jpg",
     "static/media/12.jpg": "/Pedicure_Goods_Final_Version/static/media/12.92d6a98b31df92126ca6.jpg",
     "static/media/1.jpg": "/Pedicure_Goods_Final_Version/static/media/1.564fd7db86d51ed30e45.jpg",
     "static/media/8.jpg": "/Pedicure_Goods_Final_Version/static/media/8.eafdf460d6dd7ad2684c.jpg",
     "static/media/2.jpg": "/Pedicure_Goods_Final_Version/static/media/2.7b1b5cf64f6b52de198a.jpg",
     "static/media/anna.jpg": "/Pedicure_Goods_Final_Version/static/media/anna.ff96af59eaae95a2cd6a.jpg",
+    "static/media/whatsApp.png": "/Pedicure_Goods_Final_Version/static/media/whatsApp.0b8c2d4009c97941c9a7.png",
+    "static/media/instagram.png": "/Pedicure_Goods_Final_Version/static/media/instagram.a7d3e8637ec6a2413f59.png",
+    "static/media/vk.png": "/Pedicure_Goods_Final_Version/static/media/vk.2c4fa8f7d3081036d421.png",
+    "static/media/telegram.png": "/Pedicure_Goods_Final_Version/static/media/telegram.254905df7958165aa1c6.png",
     "index.html": "/Pedicure_Goods_Final_Version/index.html",
-    "main.aff586b8.css.map": "/Pedicure_Goods_Final_Version/static/css/main.aff586b8.css.map",
-    "main.6bbff3c1.js.map": "/Pedicure_Goods_Final_Version/static/js/main.6bbff3c1.js.map",
+    "main.08cd4a83.css.map": "/Pedicure_Goods_Final_Version/static/css/main.08cd4a83.css.map",
+    "main.8da830ef.js.map": "/Pedicure_Goods_Final_Version/static/js/main.8da830ef.js.map",
     "787.28cb0dcd.chunk.js.map": "/Pedicure_Goods_Final_Version/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aff586b8.css",
-    "static/js/main.6bbff3c1.js"
+    "static/css/main.08cd4a83.css",
+    "static/js/main.8da830ef.js"
   ]
 }
