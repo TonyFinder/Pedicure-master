@@ -118,4 +118,20 @@
       }
     }
   }
+  .comment{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .directionForPictures {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 14px;
+      color: $secondaryColor;
+      text-align: right;
+      margin-left: 10px;
+      //border: 1px solid black;
+    }
+  }
 }
+
+

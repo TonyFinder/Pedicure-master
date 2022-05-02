@@ -59,7 +59,8 @@ export const introductionValues: IntroductionValuesType = {
             {id: 12, image: nails9},
             {id: 13, image: nails14},
             {id: 14, image: nails12},
-        ]
+        ],
+        restInfo: "листай для просмотра"
     }
 }
 
@@ -78,6 +79,7 @@ export type IntroductionValuesType = {
     gallery: {
         header: string
         images: IntroductionImagesType[]
+        restInfo: string
     }
 }
 export type IntroductionImagesType = {
