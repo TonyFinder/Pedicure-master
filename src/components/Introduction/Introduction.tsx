@@ -23,24 +23,7 @@ export const Introduction = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.introduction}>
-                <Typography variant={'h2'}
-                            className={styles.aboutMe}>{introductionValues.greetings.header.aboutMe.toUpperCase()}</Typography>
-                <div className={styles.imageIntroduction}>
-                    <img src={images.introduction} alt={'introduction'}/>
-                </div>
-                {introductionValues.pictures.map(value => (
-                    <div className={styles.valueContainer} key={value.id}>
-                        <div className={styles.images}>
-                            <img src={value.image} alt={'nails'}/>
-                        </div>
-                        <Typography variant={'subtitle1'} className={styles.value}>{value.value}</Typography>
-                    </div>
-                ))
-                }
-            </div>
         </div>
     )
 }
 
-// types

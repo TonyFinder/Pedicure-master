@@ -1,0 +1,121 @@
+@import "src/data/variables";
+
+.container{
+  .header{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: $headerFont;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: $secondaryColor;
+  }
+  .imageList {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: $imageGallerySize * 2 + 80px;
+    height: $imageGallerySize + 80px;
+    //border: 1px solid red;
+    @media (max-width: 1050px) {
+      width: ($imageGallerySize - $firstStep) * 2 + 80px;
+      height: ($imageGallerySize - $firstStep) + 80px;
+    }
+    @media (max-width: 880px) {
+      width: ($imageGallerySize - $secondStep) * 2 + 80px;
+      height: ($imageGallerySize - $secondStep) + 80px;
+    }
+    @media (max-width: 770px) {
+      width: ($imageGallerySize * 2 + 80px) * 0.45;
+      height: ($imageGallerySize - $thirdStep) + 80px;
+    }
+    @media (max-width: 470px) {
+      width: ($imageGallerySize * 2 + 80px) * 0.33;
+      height: ($imageGallerySize - $forthStep) + 80px;
+    }
+
+    .image{
+      //border: 1px solid black;
+      &::before {
+        position: absolute;
+        content: '';
+        width: $imageGallerySize - 25px;
+        height: $imageGallerySize - 25px;
+        bottom: 50%;
+        left: 50%;
+        border: 7px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        transform: translate(-50%, 50%);
+        @media (max-width: 1050px) {
+          width: ($imageGallerySize - $firstStep) - 25px;
+          height: ($imageGallerySize - $firstStep) - 25px;
+        }
+        @media (max-width: 880px) {
+          width: ($imageGallerySize - $secondStep) - 25px;
+          height: ($imageGallerySize - $secondStep) - 25px;
+        }
+        @media (max-width: 770px) {
+          width: ($imageGallerySize - $thirdStep) - 25px;
+          height: ($imageGallerySize - $thirdStep) - 25px;
+        }
+        @media (max-width: 470px) {
+          width: ($imageGallerySize - $forthStep) - 25px;
+          height: ($imageGallerySize - $forthStep) - 25px;
+        }
+
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: $imageGallerySize - 40px;
+        height: $imageGallerySize - 40px;
+        bottom: 50%;
+        left: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        transform: translate(-50%, 50%);
+        @media (max-width: 1050px) {
+          width: ($imageGallerySize - $firstStep) - 40px;
+          height: ($imageGallerySize - $firstStep) - 40px;
+        }
+        @media (max-width: 880px) {
+          width: ($imageGallerySize - $secondStep) - 40px;
+          height: ($imageGallerySize - $secondStep) - 40px;
+        }
+        @media (max-width: 770px) {
+          width: ($imageGallerySize - $thirdStep) - 40px;
+          height: ($imageGallerySize - $thirdStep) - 40px;
+        }
+        @media (max-width: 470px) {
+          width: ($imageGallerySize - $forthStep) - 40px;
+          height: ($imageGallerySize - $forthStep) - 40px;
+        }
+
+      }
+      img{
+        width: $imageGallerySize;
+        height: $imageGallerySize;
+        border-radius: 50%;
+        margin: 0 20px;
+        //border: 1px solid red;
+        @media (max-width: 1050px) {
+          width: $imageGallerySize - $firstStep;
+          height: $imageGallerySize - $firstStep;
+        }
+        @media (max-width: 880px) {
+          width: $imageGallerySize - $secondStep;
+          height: $imageGallerySize - $secondStep;
+        }
+        @media (max-width: 770px) {
+          width: $imageGallerySize - $thirdStep;
+          height: $imageGallerySize - $thirdStep;
+        }
+        @media (max-width: 470px) {
+          width: $imageGallerySize - $forthStep;
+          height: $imageGallerySize - $forthStep;
+        }
+      }
+    }
+  }
+}

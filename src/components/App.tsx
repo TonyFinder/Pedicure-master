@@ -4,6 +4,8 @@ import {Introduction} from './Introduction/Introduction';
 import styles from './App.module.scss'
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {Footer} from './Footer/Footer';
+import {AboutMe} from './AboutMe/AboutMe';
+import {Gallery} from './Gallery/Gallery';
 
 const theme = createTheme({
     palette: {
@@ -19,6 +21,8 @@ export const App = () => {
         <div className={styles.container}>
             <Header/>
             <Introduction/>
+            <AboutMe/>
+            <Gallery/>
             <Footer/>
         </div>
     </ThemeProvider>
