@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import styles from './Header.module.scss'
-import {MenuList} from '../../material_UI/MenuList/MenuList';
+import {MenuList} from '../MatetialUI/MenuList/MenuList';
 
 export const Header = () => {
 

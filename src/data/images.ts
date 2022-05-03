@@ -20,7 +20,7 @@ import instagram from '../images/icons/instagram.png'
 import vk from '../images/icons/vk.png'
 import telegram from '../images/icons/telegram.png'
 
-export const images = {anna, introduction}
+export const images = {anna, introduction, price: nails5}
 export const icons = [whatsApp, instagram, vk, telegram]
 export const introductionValues: IntroductionValuesType = {
     pictures: [
@@ -59,6 +59,7 @@ export const introductionValues: IntroductionValuesType = {
             {id: 12, image: nails9},
             {id: 13, image: nails14},
             {id: 14, image: nails12},
+            {id: 15, image: nails15},
         ],
         restInfo: "листай для просмотра"
     }

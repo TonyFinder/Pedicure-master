@@ -1,0 +1,14 @@
+@import "../../data/variables";
+@import "src/data/mixins";
+
+.appContainer {
+  @include appContainer;
+  margin-top: $appHeaderWidthFirst;
+  @media (max-width: 600px) {
+    margin-top: $appHeaderWidthSecond;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

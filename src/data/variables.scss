@@ -1,12 +1,21 @@
 // Fonts took from this site https://web-vdv.ru/
-
 $mainColor: #fdf5e6;
 $secondaryColor: #053543;
 $headerFont: 'Oswald', sans-serif;
 $textFont: 'Montserrat', sans-serif;
 
-$imageGallerySize: 480px;
-$firstStep: 80px;
-$secondStep: 130px;
-$thirdStep: 50px;
-$forthStep: 180px
+// Image on top of the block
+$imageOnTopInitialSize: 270px;
+
+// False elements sizes for images
+$imageOnTopBigCircle: 250px;
+$imageOnTopSmallCircle: 240px;
+
+// Images for gallery
+$imageGallerySize: 420px;
+$firstStep: 75px;
+$secondStep: 105px;
+$thirdStep: 150px;
+
+$appHeaderWidthFirst: 40px;
+$appHeaderWidthSecond: 35px;

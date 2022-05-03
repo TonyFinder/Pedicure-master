@@ -1,0 +1,110 @@
+@import "variables";
+
+// Main blocks
+@mixin appContainer {
+  background-color: $mainColor;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin componentContainer{
+  width: 90%;
+  min-height: 100vh;
+  @include flexCenter;
+  @media (max-width: 880px) {
+    width: 95%;
+  }
+}
+@mixin innerContainerWithoutShadow{
+  min-width: 250px;
+  padding: 20px;
+  margin: 15px 0px;
+  @media (max-width: 880px) {
+    padding: 15px;
+  }
+}
+@mixin innerContainerWithShadow{
+  @include innerContainerWithoutShadow;
+  @include shadowBlock;
+}
+@mixin shadowBlock {
+  box-shadow: 5px 5px 10px 0px $secondaryColor;
+  border-radius: 1%;
+}
+
+// Fonts
+@mixin fontTitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: $headerFont;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: $secondaryColor;
+}
+@mixin fontDescription {
+  font-family: $textFont;
+  font-weight: 400;
+  font-size: 16px;
+  color: $secondaryColor;
+}
+@mixin fontRestInfo {
+  font-family: $textFont;
+  font-weight: 600;
+  font-size: 14px;
+  color: $secondaryColor;
+}
+
+// Combinations
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Borders to check
+@mixin borderCheck($color) {
+  border: 1px solid $color;
+}
+
+// False elements + Media for these elements
+@mixin centerFalseElement{
+  position: absolute;
+  content: '';
+  bottom: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+@mixin falseElementSizesAboutMe($size){
+  width: $size;
+  height: $size;
+  @media (max-width: 880px) {
+    width: $size * 0.74;
+    height: $size * 0.74;
+  }
+  @media (max-width: 740px) {
+    width: $size * 0.55;
+    height: $size * 0.55;
+  }
+}
+@mixin falseElementSizesGallery ($size){
+  width: $imageGallerySize - $size;
+  height: $imageGallerySize - $size;
+  @media (max-width: 1050px) {
+    width: $imageGallerySize - $firstStep - $size;
+    height: $imageGallerySize - $firstStep - $size;
+  }
+  @media (max-width: 880px) {
+    width: $imageGallerySize - $secondStep - $size;
+    height: $imageGallerySize - $secondStep - $size;
+  }
+  @media (max-width: 770px) {
+    width: $imageGallerySize - $size;
+    height: $imageGallerySize - $size;
+  }
+  @media (max-width: 470px) {
+    width: $imageGallerySize - $thirdStep - $size;
+    height: $imageGallerySize - $thirdStep - $size;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../../data/variables";
+@import "src/data/mixins";
+
+.container {
+  @include componentContainer;
+  @media (max-width: 880px) {
+    align-items: flex-start;
+  }
+  .innerContainer {
+    @include innerContainerWithoutShadow;
+    @include flexCenter;
+    @media (max-width: 880px) {
+      flex-direction: column;
+    }
+
+    .image {
+      margin-right: 20px;
+      @media (max-width: 880px) {
+        margin-right: 0px;
+      }
+
+      img {
+        border-radius: 10%;
+        box-shadow: -5px 5px 10px 0px $secondaryColor;
+        @media (max-width: 880px) {
+          width: 250px;
+          box-shadow: -5px -5px 10px 0px $secondaryColor;
+        }
+      }
+    }
+
+    .greetings {
+      @include innerContainerWithShadow;
+      box-shadow: 5px -5px 10px 0px $secondaryColor;
+      @media (max-width: 880px) {
+        box-shadow: 5px 5px 10px 0px $secondaryColor;
+      }
+
+      .title {
+        @include fontTitle;
+        margin-bottom: 20px;
+      }
+
+      .mainSign {
+        @include fontDescription;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+
+      .directionToMenu {
+        @include fontRestInfo;
+        text-align: right;
+        margin-top: 15px;
+      }
+    }
+  }
+}

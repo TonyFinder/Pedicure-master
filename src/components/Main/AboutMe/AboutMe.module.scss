@@ -1,0 +1,104 @@
+@import "../../../data/variables";
+@import "src/data/mixins";
+
+.container {
+  @include componentContainer;
+
+  .innerContainer {
+    position: relative;
+    @include innerContainerWithShadow;
+
+    .title {
+      @include fontTitle;
+    }
+
+    .imageOnTop {
+      position: absolute;
+      right: -10%;
+      top: -20%;
+      height: $imageOnTopInitialSize;
+      @media (max-width: 880px) {
+        right: 0;
+        top: -11%;
+        height: $imageOnTopInitialSize * 0.74;
+      }
+      @media (max-width: 740px) {
+        right: 0;
+        top: -11%;
+        height: $imageOnTopInitialSize * 0.55;
+      }
+      @media (max-width: 570px) {
+        display: none;
+      }
+
+      &::before {
+        @include falseElementSizesAboutMe($imageOnTopBigCircle);
+        @include centerFalseElement;
+        border: 5px solid rgba(255, 255, 255, 0.8);
+      }
+
+      &::after {
+        @include falseElementSizesAboutMe($imageOnTopSmallCircle);
+        @include centerFalseElement;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+      }
+
+      img {
+        @include falseElementSizesAboutMe($imageOnTopInitialSize);
+        border-radius: 50%;
+      }
+    }
+
+    .valueContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -10px;
+        left: 50%;
+        width: 150px;
+        height: 2px;
+        background-color: $secondaryColor;
+        transform: translate(-50%, 50%);
+      }
+
+      @media (max-width: 450px) {
+        flex-direction: column;
+      }
+
+      .images {
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        &::after {
+          @include centerFalseElement;
+          width: 90px;
+          height: 90px;
+          border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+
+      .description {
+        width: 100%;
+        margin-left: 20px;
+        @include fontDescription;
+        @media (max-width: 450px) {
+          margin-left: 0px;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}

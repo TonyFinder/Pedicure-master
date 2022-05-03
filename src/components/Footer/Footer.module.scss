@@ -1,16 +1,15 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
 .box {
   width: 100%;
   opacity: 0.9;
   .toolbar {
-    min-height: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: $appHeaderWidthFirst;
+    height: $appHeaderWidthFirst;
+    @include flexCenter;
     .icons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexCenter;
       .icon{
         margin: 0px 10px;
         img {
