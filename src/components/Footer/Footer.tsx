@@ -11,9 +11,11 @@ export const Footer = () => {
         <AppBar position={'static'}>
             <Toolbar className={styles.toolbar}>
                 <div className={styles.icons}>
-                    {icons.map((icon, index) => (
-                        <div className={styles.icon} key={index}>
-                            <img src={icon} alt={'icon'}/>
+                    {icons.map((icon) => (
+                        <div className={styles.icon} key={icon.id}>
+                            <a href={icon.url}>
+                                <img src={icon.image} alt={'icon'}/>
+                            </a>
                         </div>
                     ))}
                 </div>

@@ -21,7 +21,12 @@ import vk from '../images/icons/vk.png'
 import telegram from '../images/icons/telegram.png'
 
 export const images = {anna, introduction, price: nails5}
-export const icons = [whatsApp, instagram, vk, telegram]
+export const icons = [
+    {id: 1, image: whatsApp, url: 'https://wa.me/79510215025'},
+    {id: 2, image: instagram, url: 'https://www.instagram.com/pedicure.cabinet/'},
+    {id: 3, image: vk, url: 'https://vk.com/pedicure.cabinet'},
+    {id: 4, image: telegram, url: 'https://t.me/PedicureCabinet'},
+]
 export const introductionValues: IntroductionValuesType = {
     pictures: [
         {id: 1, image: nails1, value: 'Занимаюсь педикюром с 2018 года и не могу остановиться!'},

@@ -4,6 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Zoom from '@mui/material/Zoom';
 import {Link} from 'react-router-dom';
+import styles from './MenuList.module.scss'
 
 export const MenuList = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -38,15 +39,14 @@ export const MenuList = () => {
                 open={open}
                 onClose={handleClose}
                 TransitionComponent={Zoom}
+                className={styles.links}
             >
                 <MenuItem onClick={handleClose}>
                     <Link to="/">Главная</Link>
                 </MenuItem>
-                <MenuItem onClick={handleClose}>Обучение</MenuItem>
                 <MenuItem onClick={handleClose}>
                     <Link to="/price">Прайс на услуги</Link>
                 </MenuItem>
-                <MenuItem onClick={handleClose}>Товары в продаже</MenuItem>
             </Menu>
         </div>
     );
