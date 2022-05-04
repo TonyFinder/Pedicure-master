@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Zoom from '@mui/material/Zoom';
+import {Link} from 'react-router-dom';
 
 export const MenuList = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -38,9 +39,13 @@ export const MenuList = () => {
                 onClose={handleClose}
                 TransitionComponent={Zoom}
             >
-                <MenuItem onClick={handleClose}>Главная</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to="/">Главная</Link>
+                </MenuItem>
                 <MenuItem onClick={handleClose}>Обучение</MenuItem>
-                <MenuItem onClick={handleClose}>Прайс на услуги</MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <Link to="/price">Прайс на услуги</Link>
+                </MenuItem>
                 <MenuItem onClick={handleClose}>Товары в продаже</MenuItem>
             </Menu>
         </div>
