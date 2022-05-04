@@ -41,12 +41,18 @@ export const MenuList = () => {
                 TransitionComponent={Zoom}
                 className={styles.links}
             >
-                <MenuItem onClick={handleClose}>
-                    <Link to="/">Главная</Link>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                    <Link to="/price">Прайс на услуги</Link>
-                </MenuItem>
+                <Link to="/">
+                    <MenuItem onClick={handleClose}>Главная</MenuItem>
+                </Link>
+                <Link to="/training">
+                    <MenuItem onClick={handleClose}>Обучение</MenuItem>
+                </Link>
+                <Link to="/price">
+                    <MenuItem onClick={handleClose}>Прайс на услуги</MenuItem>
+                </Link>
+                <Link to="/goods">
+                    <MenuItem onClick={handleClose}>Средства для ухода</MenuItem>
+                </Link>
             </Menu>
         </div>
     );

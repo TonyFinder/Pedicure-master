@@ -14,30 +14,32 @@ import nails12 from '../images/12.jpg';
 import nails13 from '../images/13.jpg';
 import nails14 from '../images/14.jpg';
 import nails15 from '../images/15.jpg';
-import introduction from '../images/14.jpg';
+import nails16 from '../images/16.jpg';
+import nails17 from '../images/17.jpg';
+import nails18 from '../images/18.jpg';
 import whatsApp from '../images/icons/whatsApp.png'
 import instagram from '../images/icons/instagram.png'
 import vk from '../images/icons/vk.png'
 import telegram from '../images/icons/telegram.png'
 
-export const images = {anna, introduction, price: nails5}
+export const images = {anna, introduction: nails7, price: nails5}
 export const icons = [
     {id: 1, image: whatsApp, url: 'https://wa.me/79510215025'},
-    {id: 2, image: instagram, url: 'https://www.instagram.com/pedicure.cabinet/'},
+    {id: 2, image: instagram, url: 'https://www.instagram.com/pedicure.cabinet'},
     {id: 3, image: vk, url: 'https://vk.com/pedicure.cabinet'},
     {id: 4, image: telegram, url: 'https://t.me/PedicureCabinet'},
 ]
 export const introductionValues: IntroductionValuesType = {
     pictures: [
-        {id: 1, image: nails1, value: 'Занимаюсь педикюром с 2018 года и не могу остановиться!'},
-        {id: 2, image: nails2, value: 'Непрерывно совершенствую себя как мастер и преподаватель.'},
-        {id: 3, image: nails8, value: 'Провожу индивидуальные курсы по педикюру.'},
-        {id: 4, image: nails9, value: 'Готовлю ОНЛАЙН-КУРС по обработке и дизайну для ноготков.'},
-        {id: 5, image: nails12, value: 'Продаю только испытанную на себе косметику.'},
+        {id: 1, image: nails17, value: 'Занимаюсь педикюром с 2018 года.'},
+        {id: 2, image: nails14, value: 'Непрерывно совершенствую себя как мастер и преподаватель.'},
+        {id: 3, image: nails11, value: 'Провожу индивидуальные курсы по педикюру с 2021 года.'},
+        {id: 4, image: nails3, value: 'Готовлю ОНЛАЙН-КУРС по обработке и дизайну ногтей.'},
+        {id: 5, image: nails12, value: 'Продаю только проверенную косметику.'},
     ],
     greetings: {
         header: {
-            anna: 'Здравствуйте, это Аня!',
+            anna: 'Здравствуйте, меня зовут Анна!',
             aboutMe: 'Немного обо мне'
         },
         description: [
@@ -50,21 +52,24 @@ export const introductionValues: IntroductionValuesType = {
     gallery: {
         header: 'Примеры моих работ',
         images: [
-            {id: 1, image: nails3},
-            {id: 2, image: nails4},
-            {id: 3, image: nails5},
-            {id: 4, image: nails1},
-            {id: 5, image: nails6},
+            {id: 1, image: nails6},
+            {id: 2, image: nails5},
+            {id: 3, image: nails1},
+            {id: 4, image: nails2},
+            {id: 5, image: nails4},
             {id: 6, image: nails7},
-            {id: 7, image: nails2},
-            {id: 8, image: nails10},
-            {id: 9, image: nails8},
+            {id: 7, image: nails8},
+            {id: 8, image: nails9},
+            {id: 9, image: nails10},
             {id: 10, image: nails11},
-            {id: 11, image: nails13},
-            {id: 12, image: nails9},
+            {id: 11, image: nails12},
+            {id: 12, image: nails13},
             {id: 13, image: nails14},
-            {id: 14, image: nails12},
-            {id: 15, image: nails15},
+            {id: 14, image: nails15},
+            {id: 15, image: nails16},
+            {id: 16, image: nails17},
+            {id: 17, image: nails18},
+            {id: 18, image: nails3},
         ],
         restInfo: "листай для просмотра"
     }
