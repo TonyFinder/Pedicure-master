@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fda8be7a.css",
-    "main.js": "/static/js/main.7b789c67.js",
+    "main.css": "/static/css/main.c43bc2ef.css",
+    "main.js": "/static/js/main.dddaa66d.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/1.jpg": "/static/media/1.23dda2f50b7cd5e9228b.jpg",
     "static/media/17.jpg": "/static/media/17.e08be4dabd8451d7244e.jpg",
@@ -21,18 +21,19 @@
     "static/media/15.jpg": "/static/media/15.cee68171c281bf24bfc7.jpg",
     "static/media/9.jpg": "/static/media/9.2b2efe9e6a955ae7d153.jpg",
     "static/media/14.jpg": "/static/media/14.7d5e0cd10477ea84095d.jpg",
+    "static/media/370.png": "/static/media/370.84a236ab5836b0df4050.png",
     "static/media/16.jpg": "/static/media/16.5e4dab41e3b6b6b23773.jpg",
     "static/media/whatsApp.png": "/static/media/whatsApp.0b8c2d4009c97941c9a7.png",
     "static/media/instagram.png": "/static/media/instagram.a7d3e8637ec6a2413f59.png",
     "static/media/vk.png": "/static/media/vk.2c4fa8f7d3081036d421.png",
     "static/media/telegram.png": "/static/media/telegram.254905df7958165aa1c6.png",
     "index.html": "/index.html",
-    "main.fda8be7a.css.map": "/static/css/main.fda8be7a.css.map",
-    "main.7b789c67.js.map": "/static/js/main.7b789c67.js.map",
+    "main.c43bc2ef.css.map": "/static/css/main.c43bc2ef.css.map",
+    "main.dddaa66d.js.map": "/static/js/main.dddaa66d.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda8be7a.css",
-    "static/js/main.7b789c67.js"
+    "static/css/main.c43bc2ef.css",
+    "static/js/main.dddaa66d.js"
   ]
 }
