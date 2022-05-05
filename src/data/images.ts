@@ -24,10 +24,10 @@ import telegram from '../images/icons/telegram.png'
 
 export const images = {anna, introduction: nails7, price: nails5}
 export const icons = [
-    {id: 1, image: whatsApp, url: 'https://wa.me/79510215025'},
-    {id: 2, image: instagram, url: 'https://www.instagram.com/pedicure.cabinet'},
-    {id: 3, image: vk, url: 'https://vk.com/pedicure.cabinet'},
-    {id: 4, image: telegram, url: 'https://t.me/PedicureCabinet'},
+    {id: 'whatsApp', image: whatsApp, url: 'https://wa.me/79510215025'},
+    {id: 'instagram', image: instagram, url: 'https://www.instagram.com/pedicure.cabinet'},
+    {id: 'vk', image: vk, url: 'https://vk.com/pedicure.cabinet'},
+    {id: 'telegram', image: telegram, url: 'https://t.me/PedicureCabinet'},
 ]
 export const introductionValues: IntroductionValuesType = {
     pictures: [

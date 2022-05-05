@@ -9,7 +9,16 @@
 
     .title {
       @include fontTitle;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
+    }
+    .valueContainer{
+      .description{
+        @include fontDescription;
+        a {
+          text-decoration: none;
+          color: $secondaryColor;
+        }
+      }
     }
   }
 }

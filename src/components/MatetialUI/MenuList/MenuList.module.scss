@@ -1,8 +1,16 @@
 @import "src/data/variables";
+@import "src/data/mixins";
 
 .links{
   a {
+    display: flex;
     text-decoration: none;
     color: $secondaryColor;
+    .menuItem{
+      width: 100%;
+      .icon{
+        margin-left: 10px;
+      }
+    }
   }
 }

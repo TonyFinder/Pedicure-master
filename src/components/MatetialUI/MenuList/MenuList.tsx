@@ -2,9 +2,10 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Zoom from '@mui/material/Zoom';
 import {Link} from 'react-router-dom';
 import styles from './MenuList.module.scss'
+import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+import Slide from '@mui/material/Slide';
 
 export const MenuList = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -38,20 +39,26 @@ export const MenuList = () => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                TransitionComponent={Zoom}
+                TransitionComponent={Slide}
                 className={styles.links}
             >
                 <Link to="/">
-                    <MenuItem onClick={handleClose}>Главная</MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>Главная</MenuItem>
                 </Link>
                 <Link to="/training">
-                    <MenuItem onClick={handleClose}>Обучение</MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>
+                        Обучение
+                        <MiscellaneousServicesIcon className={styles.icon}/>
+                    </MenuItem>
                 </Link>
                 <Link to="/price">
-                    <MenuItem onClick={handleClose}>Прайс на услуги</MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>Прайс на услуги</MenuItem>
                 </Link>
                 <Link to="/goods">
-                    <MenuItem onClick={handleClose}>Средства для ухода</MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>
+                        Средства для ухода
+                        <MiscellaneousServicesIcon className={styles.icon}/>
+                    </MenuItem>
                 </Link>
             </Menu>
         </div>
