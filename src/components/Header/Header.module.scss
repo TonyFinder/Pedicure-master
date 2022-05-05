@@ -1,12 +1,19 @@
 @import "src/data/variables";
+@import "src/data/mixins";
 
 .box {
   .toolbar {
     min-height: $appHeaderWidthFirst;
     height: $appHeaderWidthFirst;
+    display: flex;
+    justify-content: space-between;
     @media (max-width: 600px) {
       min-height: $appHeaderWidthSecond;
       height: $appHeaderWidthSecond;
+    }
+    a {
+      text-decoration: none;
+      color: white;
     }
   }
 }

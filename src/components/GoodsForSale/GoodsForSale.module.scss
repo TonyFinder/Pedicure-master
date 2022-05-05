@@ -1,0 +1,23 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
+.container {
+  @include componentContainer;
+  @include borderCheck(blue);
+
+  .innerContainer {
+    @include innerContainerWithoutShadow;
+    width: 100%;
+    //@include borderCheck(black);
+
+    .title{
+      @include fontTitle;
+      margin-bottom: 20px;
+      //@include borderCheck(black);
+    }
+    .filter{
+      @include borderCheck(black);
+      @include flexCenter;
+    }
+  }
+}

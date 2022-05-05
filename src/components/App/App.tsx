@@ -7,6 +7,7 @@ import {Main} from '../Main/Main';
 import {Price} from '../Price/Price';
 import {Route, Routes} from 'react-router-dom';
 import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
+import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 
 const theme = createTheme({
     palette: {
@@ -26,6 +27,7 @@ export const App = () => {
                 <Route path="/price" element={<Price/>}/>
                 <Route path="/training" element={<UnderDevelopment/>}/>
                 <Route path="/goods" element={<UnderDevelopment/>}/>
+                <Route path="/goodsSale" element={<GoodsForSale/>}/>
             </Routes>
         </div>
         <Footer/>
