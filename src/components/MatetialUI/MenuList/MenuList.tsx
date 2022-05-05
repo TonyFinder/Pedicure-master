@@ -5,7 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom';
 import styles from './MenuList.module.scss'
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-import Slide from '@mui/material/Slide';
+import Fade from '@mui/material/Fade';
 
 export const MenuList = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -39,7 +39,7 @@ export const MenuList = () => {
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
-                TransitionComponent={Slide}
+                TransitionComponent={Fade}
                 className={styles.links}
             >
                 <Link to="/">

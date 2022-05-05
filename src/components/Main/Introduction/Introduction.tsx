@@ -20,6 +20,9 @@ export const Introduction = () => {
                         ))}
                         <Typography
                             className={styles.directionToMenu}>{introductionValues.greetings.restInfo}</Typography>
+                        <Typography className={styles.directionToMenu}>
+                            <a href={'https://www.instagram.com/pedicure.cabinet'} target={'_blank'} rel="noreferrer">@pedicure.cabinet</a>
+                        </Typography>
                     </div>
                 </div>
             </div>
