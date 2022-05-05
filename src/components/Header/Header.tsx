@@ -12,7 +12,7 @@ export const Header = () => {
         <AppBar>
             <Toolbar className={styles.toolbar}>
                 <MenuList/>
-                <a href={'https://wa.me/79510215025'} target={'_blank'}>
+                <a href={'https://wa.me/79510215025'} target={'_blank'} rel="noreferrer">
                     <Button color={'inherit'} size={'large'} style={{padding: 2}}>
                         ЗАПИСЬ НА ПРОЦЕДУРУ
                     </Button>

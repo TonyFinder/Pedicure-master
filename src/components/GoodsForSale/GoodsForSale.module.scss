@@ -3,7 +3,8 @@
 
 .container {
   @include componentContainer;
-  @include borderCheck(blue);
+  align-items: start;
+  //@include borderCheck(blue);
 
   .innerContainer {
     @include innerContainerWithoutShadow;
@@ -16,8 +17,13 @@
       //@include borderCheck(black);
     }
     .filter{
-      @include borderCheck(black);
+      //@include borderCheck(black);
       @include flexCenter;
+    }
+    .items{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
     }
   }
 }

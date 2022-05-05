@@ -1,0 +1,42 @@
+@import "src/data/mixins";
+@import "src/data/variables";
+
+.container {
+  @include innerContainerWithShadow;
+  //@include borderCheck(red);
+  width: 400px;
+  .title {
+    @include fontDescription;
+    font-weight: 500;
+    //@include borderCheck(red);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .imageContainer {
+    display: flex;
+    width: 100%;
+    //@include borderCheck(red);
+    .image{
+      //@include borderCheck(black);
+      img{
+        height: 400px;
+      }
+    }
+    .description{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      //@include borderCheck(black);
+      width: 100%;
+      .volume{
+        margin: 20px 0;
+      }
+      .price{
+        div{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
