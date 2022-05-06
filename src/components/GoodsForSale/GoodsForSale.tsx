@@ -6,24 +6,6 @@ import {Item} from './Item/Item';
 
 export const GoodsForSale = () => {
 
-    /*const first = [
-        {id: 1, image: '11'},
-        {id: 2, image: '12'},
-        {id: 3, image: '13'},
-    ]
-    const second = [
-        {id: 6, image: '22'},
-        {id: 7, image: '23'},
-        {id: 8, image: '24'},
-    ]
-
-    let trials = [first, second]*/
-    {/*<div className={styles.trial}>
-                {trials.concat().map(m => <div>{m.map(m => <div>{m.image}</div>)}</div>)}
-            </div>*/
-    }
-
-
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>

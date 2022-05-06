@@ -94,7 +94,7 @@
         margin-left: 20px;
         @include fontDescription;
         @media (max-width: 450px) {
-          margin-left: 0px;
+          margin-left: 0;
           text-align: center;
         }
       }

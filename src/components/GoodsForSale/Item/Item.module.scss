@@ -3,37 +3,89 @@
 
 .container {
   @include innerContainerWithShadow;
-  //@include borderCheck(red);
   width: 400px;
   .title {
     @include fontDescription;
     font-weight: 500;
-    //@include borderCheck(red);
     margin-bottom: 15px;
     text-align: center;
   }
   .imageContainer {
     display: flex;
+    align-items: center;
     width: 100%;
-    //@include borderCheck(red);
     .image{
-      //@include borderCheck(black);
       img{
-        height: 400px;
+        max-height: 400px;
+        width: 100px;
+        @media (max-width: 360px) {
+          width: 70px;
+        }
       }
     }
-    .description{
+    .descriptionContainer{
       display: flex;
-      align-items: center;
+      justify-content: flex-start;
       flex-direction: column;
-      //@include borderCheck(black);
-      width: 100%;
-      .volume{
-        margin: 20px 0;
-      }
-      .price{
-        div{
+      .description{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15px 0;
+        @include fontRestInfo;
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+        .volume{
+        }
+        .price{
           text-align: center;
+        }
+      }
+      .actionDescription {
+        @include fontDescription;
+        box-shadow: 0 0 5px 0 $secondaryColor;
+        border-radius: 1%;
+        font-size: 14px;
+        padding: 10px 3px;
+        margin-left: 10px;
+        text-align: center;
+        @media (max-width: 450px) {
+          font-size: 12px;
+        }
+        div {
+          position: relative;
+          margin-bottom: 15px;
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: -5px;
+            left: 50%;
+            width: 80px;
+            height: 1px;
+            background-color: $secondaryColor;
+            transform: translate(-50%, 50%);
+          }
+        }
+      }
+    }
+
+  }
+  .buttonsContainer{
+    text-align: center;
+    .buttonGroup{
+      .button{
+        @media (max-width: 450px) {
+          padding: 3px;
+        }
+        @media (max-width: 400px) {
+          font-size: 12px;
+        }
+        @media (max-width: 360px) {
+          @include fontRestInfo;
+          text-transform: capitalize;
+          font-size: 10px;
+          font-weight: 500;
         }
       }
     }
