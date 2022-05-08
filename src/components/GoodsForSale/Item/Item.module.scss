@@ -15,10 +15,13 @@
     align-items: center;
     width: 100%;
     .image{
+      @media (max-width: 350px) {
+        display: none;
+      }
       img{
         max-height: 400px;
         width: 100px;
-        @media (max-width: 360px) {
+        @media (max-width: 400px) {
           width: 70px;
         }
       }
@@ -27,19 +30,33 @@
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
-      .description{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 15px 0;
-        @include fontRestInfo;
-        @media (max-width: 400px) {
-          font-size: 12px;
+      .descriptionChart{
+        margin-bottom: 10px;
+
+        .headerChart{
+          @include fontRestInfo;
+          @include flexCenter;
+          margin-bottom: 5px;
+          div {
+            width: 40%;
+            text-align: center;
+            @media (max-width: 400px) {
+              font-size: 14px;
+              width: 50%;
+            }
+          }
         }
-        .volume{
-        }
-        .price{
-          text-align: center;
+        .valueChart{
+          @include fontDescription;
+          @include flexCenter;
+          div{
+            width: 40%;
+            text-align: center;
+            @media (max-width: 400px) {
+              font-size: 14px;
+              width: 50%;
+            }
+          }
         }
       }
       .actionDescription {
@@ -59,7 +76,7 @@
           &::after {
             position: absolute;
             content: '';
-            bottom: -5px;
+            bottom: -8px;
             left: 50%;
             width: 80px;
             height: 1px;
@@ -73,19 +90,18 @@
   }
   .buttonsContainer{
     text-align: center;
+    margin-top: 10px;
     .buttonGroup{
       .button{
+        padding: 5px;
+        text-transform: capitalize;
         @media (max-width: 450px) {
           padding: 3px;
         }
         @media (max-width: 400px) {
-          font-size: 12px;
-        }
-        @media (max-width: 360px) {
           @include fontRestInfo;
-          text-transform: capitalize;
           font-size: 10px;
-          font-weight: 500;
+          font-weight: 700;
         }
       }
     }

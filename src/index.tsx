@@ -5,17 +5,19 @@ import reportWebVitals from './reportWebVitals';
 import {App} from './components/App/App';
 import {HashRouter} from 'react-router-dom';
 import {ScrollToTop} from './components/common/ScrollToTop/ScrollToTop';
+import {Provider} from 'react-redux';
+import {store} from './data/store/store';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <HashRouter>
-            <ScrollToTop/>
-            <App/>
-        </HashRouter>
-    </React.StrictMode>
+        <Provider store={store}>
+            <HashRouter>
+                <ScrollToTop/>
+                <App/>
+            </HashRouter>
+        </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

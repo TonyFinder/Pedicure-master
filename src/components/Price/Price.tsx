@@ -16,7 +16,7 @@ export const Price = () => {
                     {priceForPedicure.priceList.map((procedure, index) => (
                         <div key={index} className={styles.block}>
                             <Divider className={styles.divider}>
-                                <Chip label={`${procedure.price} рублей`} className={styles.chip}/>
+                                <Chip label={procedure.price} className={styles.chip}/>
                             </Divider>
                             <Typography variant={'subtitle1'}
                                         className={styles.description}>{procedure.item}</Typography>

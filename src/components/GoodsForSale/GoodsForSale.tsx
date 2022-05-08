@@ -2,9 +2,13 @@ import React from 'react';
 import styles from './GoodsForSale.module.scss'
 import Typography from '@mui/material/Typography';
 import {SelectAutoWidth} from '../MatetialUI/SelectAutoWidth/SelectAutoWidth';
-import {Item} from './Item/Item';
+import {useSelector} from 'react-redux';
+import {StoreType} from '../../data/store/store';
 
 export const GoodsForSale = () => {
+
+    const categories = useSelector<StoreType, string[]>(state => state.goods.chosenCategory
+        .filter(category => category.active).map(category => category.category))
 
     return (
         <div className={styles.container}>
@@ -14,12 +18,7 @@ export const GoodsForSale = () => {
                     <SelectAutoWidth/>
                 </div>
                 <div className={styles.items}>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
+                    {categories.map(category => category)}
                 </div>
             </div>
         </div>

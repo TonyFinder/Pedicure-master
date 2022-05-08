@@ -15,16 +15,21 @@
 
     .image {
       margin-right: 20px;
+      width: $mainPhotoWidth;
+      height: $mainPhotoHeight;
       @media (max-width: 880px) {
         margin-right: 0px;
+        width: $mainPhotoWidth * $firstStepPhoto;
+        height: $mainPhotoHeight * $firstStepPhoto;
       }
 
       img {
         border-radius: 10%;
         box-shadow: -5px 5px 10px 0px $secondaryColor;
+        width: $mainPhotoWidth;
         @media (max-width: 880px) {
-          width: 250px;
           box-shadow: -5px -5px 10px 0px $secondaryColor;
+          width: $mainPhotoWidth * $firstStepPhoto;
         }
       }
     }

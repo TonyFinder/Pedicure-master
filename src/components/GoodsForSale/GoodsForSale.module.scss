@@ -3,7 +3,7 @@
 
 .container {
   @include componentContainer;
-  align-items: start;
+  align-items: flex-start;
   //@include borderCheck(blue);
 
   .innerContainer {
