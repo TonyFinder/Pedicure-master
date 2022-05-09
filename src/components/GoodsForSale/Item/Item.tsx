@@ -33,6 +33,13 @@ export const Item = ({itemData}: ItemPropsType) => {
                             </div>)}
                         </div>
                     </div>
+                    <div className={styles.buttonsContainer}>
+                        <ButtonGroup variant="text" aria-label="text button group" className={styles.buttonGroup}>
+                            <Button key="action" style={description === text.action ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.action)}>Действие</Button>
+                            <Button key="ingredients" style={description === text.ingredients ? buttonActiveColor : {}} className={styles.button}  onClick={() => onClickHandler(text.ingredients)}>Ингредиенты</Button>
+                            <Button key="apply" style={description === text.applying ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.applying)}>Применение</Button>
+                        </ButtonGroup>
+                    </div>
                     <div className={styles.imageContainer}>
                         <div className={styles.image}>
                             <img src={itemData.pictureUrl} alt={'goodsImage'}/>
@@ -44,13 +51,6 @@ export const Item = ({itemData}: ItemPropsType) => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.buttonsContainer}>
-                        <ButtonGroup variant="text" aria-label="text button group" className={styles.buttonGroup}>
-                            <Button key="action" style={description === text.action ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.action)}>Действие</Button>
-                            <Button key="ingredients" style={description === text.ingredients ? buttonActiveColor : {}} className={styles.button}  onClick={() => onClickHandler(text.ingredients)}>Ингредиенты</Button>
-                            <Button key="apply" style={description === text.applying ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.applying)}>Применение</Button>
-                        </ButtonGroup>
-                    </div>
             </div>
     )
 }

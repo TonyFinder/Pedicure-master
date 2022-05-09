@@ -54,19 +54,43 @@
         }
       }
     }
+    .buttonsContainer{
+      text-align: center;
+      margin-bottom: 10px;
+      .buttonGroup{
+        @include shadowInsideBlock;
+        border-radius: 3px;
+        .button{
+          padding: 5px;
+          text-transform: capitalize;
+          @media (max-width: 450px) {
+            padding: 3px;
+          }
+          @media (max-width: 400px) {
+            @include fontRestInfo;
+            font-size: 10px;
+            font-weight: 700;
+          }
+          @media (max-width: 320px) {
+            padding: 1px;
+            font-size: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
     .imageContainer {
       display: flex;
       align-items: flex-end;
       width: 100%;
-      min-height: 70%;
+      height: 100%;
       .image{
-        @include flexCenter;
+        display: flex;
+        align-items: flex-end;
         height: 250px;
         width: 100px;
         @media (max-width: 350px) {
           display: none;
-          height: 0;
-          width: 0;
         }
         img{
           height: 250px;
@@ -116,31 +140,6 @@
         }
       }
 
-    }
-  }
-  .buttonsContainer{
-    text-align: center;
-    margin-top: 10px;
-    .buttonGroup{
-      @include shadowInsideBlock;
-      border-radius: 3px;
-      .button{
-        padding: 5px;
-        text-transform: capitalize;
-        @media (max-width: 450px) {
-          padding: 3px;
-        }
-        @media (max-width: 400px) {
-          @include fontRestInfo;
-          font-size: 10px;
-          font-weight: 700;
-        }
-        @media (max-width: 320px) {
-          padding: 1px;
-          font-size: 10px;
-          font-weight: 700;
-        }
-      }
     }
   }
 }
