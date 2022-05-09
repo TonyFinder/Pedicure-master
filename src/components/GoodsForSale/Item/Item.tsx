@@ -5,16 +5,15 @@ import {ItemType} from '../../../data/reducers/goodsReducer';
 import {useState} from 'react';
 
 type ItemPropsType = {
-    id: number
     itemData: ItemType
 }
 
 
-export const Item = ({id, itemData}: ItemPropsType) => {
+export const Item = ({itemData}: ItemPropsType) => {
     let text = itemData.description
     const [description, setDescription] = useState<string[]>(text.action)
     const buttonActiveColor = {backgroundColor: "#39446f", color: "white"}
-
+    const onClickHandler = (value: string[]) => setDescription(value)
 
     return (
             <div className={styles.container}>
@@ -47,9 +46,9 @@ export const Item = ({id, itemData}: ItemPropsType) => {
                 </div>
                 <div className={styles.buttonsContainer}>
                         <ButtonGroup variant="text" aria-label="text button group" className={styles.buttonGroup}>
-                            <Button key="action" style={buttonActiveColor} className={styles.button}>Действие</Button>
-                            <Button key="ingredients" className={styles.button}>Ингредиенты</Button>
-                            <Button key="apply" className={styles.button}>Применение</Button>
+                            <Button key="action" style={description === text.action ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.action)}>Действие</Button>
+                            <Button key="ingredients" style={description === text.ingredients ? buttonActiveColor : {}} className={styles.button}  onClick={() => onClickHandler(text.ingredients)}>Ингредиенты</Button>
+                            <Button key="apply" style={description === text.applying ? buttonActiveColor : {}} className={styles.button} onClick={() => onClickHandler(text.applying)}>Применение</Button>
                         </ButtonGroup>
                     </div>
             </div>

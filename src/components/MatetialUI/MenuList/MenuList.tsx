@@ -55,10 +55,7 @@ export const MenuList = () => {
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Прайс на услуги</MenuItem>
                 </Link>
                 <Link to="/goods">
-                    <MenuItem onClick={handleClose} className={styles.menuItem}>
-                        Средства для ухода
-                        <MiscellaneousServicesIcon className={styles.icon}/>
-                    </MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>Средства для ухода</MenuItem>
                 </Link>
             </Menu>
         </div>

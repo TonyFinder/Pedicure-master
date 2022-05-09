@@ -23,13 +23,13 @@ export const GoodsForSale = () => {
                 </div>
                 <div className={styles.items}>
                     {(categoriesToShow.length === 1 && categoriesToShow[0] === 'drySkin') && drySkin.map(item => (
-                        <Item key={item.id} id={item.id} itemData={item}/>
+                        <Item key={item.id} itemData={item}/>
                     ))}
                     {(categoriesToShow.length === 1 && categoriesToShow[0] === 'wetSkin') && wetSkin.map(item => (
-                        <Item key={item.id} id={item.id} itemData={item}/>
+                        <Item key={item.id} itemData={item}/>
                     ))}
                     {(categoriesToShow.length > 1) && drySkin.concat(wetSkin).map(item => (
-                        <Item key={item.id} id={item.id} itemData={item}/>
+                        <Item key={item.id} itemData={item}/>
                     ))}
                 </div>
             </div>
