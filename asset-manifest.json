@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ee6cedc.css",
-    "main.js": "/static/js/main.71964ed6.js",
+    "main.css": "/static/css/main.8952d82d.css",
+    "main.js": "/static/js/main.986c664f.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/1.jpg": "/static/media/1.23dda2f50b7cd5e9228b.jpg",
     "static/media/17.jpg": "/static/media/17.e08be4dabd8451d7244e.jpg",
@@ -22,17 +22,27 @@
     "static/media/9.jpg": "/static/media/9.2b2efe9e6a955ae7d153.jpg",
     "static/media/14.jpg": "/static/media/14.7d5e0cd10477ea84095d.jpg",
     "static/media/16.jpg": "/static/media/16.5e4dab41e3b6b6b23773.jpg",
+    "static/media/888.png": "/static/media/888.02561e395b0b464de7d3.png",
+    "static/media/369.png": "/static/media/369.db433b965654794642d3.png",
+    "static/media/991039.png": "/static/media/991039.14614d566bca5b244f3d.png",
+    "static/media/372.png": "/static/media/372.4ad58ac897bf909bfa86.png",
+    "static/media/832.png": "/static/media/832.0b7690f84c8fc359d635.png",
+    "static/media/367.png": "/static/media/367.679b73605e69b466c9ba.png",
     "static/media/whatsApp.png": "/static/media/whatsApp.0b8c2d4009c97941c9a7.png",
+    "static/media/889.png": "/static/media/889.eebdb746e5224098981e.png",
+    "static/media/1111.png": "/static/media/1111.c290de0edc521414dc98.png",
+    "static/media/111.png": "/static/media/111.b765d3ca40c9c3092615.png",
+    "static/media/222.png": "/static/media/222.00fd0912ef4db04c61ba.png",
     "static/media/instagram.png": "/static/media/instagram.a7d3e8637ec6a2413f59.png",
     "static/media/vk.png": "/static/media/vk.2c4fa8f7d3081036d421.png",
     "static/media/telegram.png": "/static/media/telegram.254905df7958165aa1c6.png",
     "index.html": "/index.html",
-    "main.8ee6cedc.css.map": "/static/css/main.8ee6cedc.css.map",
-    "main.71964ed6.js.map": "/static/js/main.71964ed6.js.map",
+    "main.8952d82d.css.map": "/static/css/main.8952d82d.css.map",
+    "main.986c664f.js.map": "/static/js/main.986c664f.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ee6cedc.css",
-    "static/js/main.71964ed6.js"
+    "static/css/main.8952d82d.css",
+    "static/js/main.986c664f.js"
   ]
 }
