@@ -1,5 +1,5 @@
 import styles from './Introduction.module.scss';
-import {images, introductionValues} from '../../../data/images';
+import {mainPageImages, introductionValues} from '../../../data/images';
 import React from 'react';
 import Typography from '@mui/material/Typography';
 
@@ -9,7 +9,7 @@ export const Introduction = () => {
         <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <div className={styles.image}>
-                    <img src={images.anna} alt={'author'}/>
+                    <img src={mainPageImages.anna} alt={'author'}/>
                 </div>
                 <div className={styles.greetings}>
                     <Typography variant={'h1'}

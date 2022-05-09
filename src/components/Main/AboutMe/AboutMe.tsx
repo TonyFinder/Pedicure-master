@@ -1,5 +1,5 @@
 import styles from './AboutMe.module.scss';
-import {images, introductionValues} from '../../../data/images';
+import {mainPageImages, introductionValues} from '../../../data/images';
 import React from 'react';
 import Typography from '@mui/material/Typography';
 
@@ -11,7 +11,7 @@ export const AboutMe = () => {
                 <Typography variant={'h2'}
                             className={styles.title}>{introductionValues.greetings.header.aboutMe.toUpperCase()}</Typography>
                 <div className={styles.imageOnTop}>
-                    <img src={images.introduction} alt={'introduction'}/>
+                    <img src={mainPageImages.introduction} alt={'introduction'}/>
                 </div>
                 {introductionValues.pictures.map(value => (
                     <div className={styles.valueContainer} key={value.id}>

@@ -4,26 +4,23 @@
 .container {
   @include componentContainer;
   align-items: flex-start;
-  //@include borderCheck(blue);
 
   .innerContainer {
     @include innerContainerWithoutShadow;
     width: 100%;
-    //@include borderCheck(black);
 
     .title{
       @include fontTitle;
       margin-bottom: 20px;
-      //@include borderCheck(black);
     }
     .filter{
-      //@include borderCheck(black);
       @include flexCenter;
     }
     .items{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 30px;
     }
   }
 }

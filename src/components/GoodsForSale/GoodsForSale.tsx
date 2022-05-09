@@ -4,11 +4,15 @@ import Typography from '@mui/material/Typography';
 import {SelectAutoWidth} from '../MatetialUI/SelectAutoWidth/SelectAutoWidth';
 import {useSelector} from 'react-redux';
 import {StoreType} from '../../data/store/store';
+import {ItemType} from '../../data/reducers/goodsReducer';
+import {Item} from './Item/Item';
 
 export const GoodsForSale = () => {
 
-    const categories = useSelector<StoreType, string[]>(state => state.goods.chosenCategory
+    const categoriesToShow = useSelector<StoreType, string[]>(state => state.goods.chosenCategory
         .filter(category => category.active).map(category => category.category))
+    const drySkin = useSelector<StoreType, ItemType[]>(state => state.goods.drySkin)
+    const wetSkin = useSelector<StoreType, ItemType[]>(state => state.goods.wetSkin)
 
     return (
         <div className={styles.container}>
@@ -18,7 +22,15 @@ export const GoodsForSale = () => {
                     <SelectAutoWidth/>
                 </div>
                 <div className={styles.items}>
-                    {categories.map(category => category)}
+                    {(categoriesToShow.length === 1 && categoriesToShow[0] === 'drySkin') && drySkin.map(item => (
+                        <Item key={item.id} id={item.id} itemData={item}/>
+                    ))}
+                    {(categoriesToShow.length === 1 && categoriesToShow[0] === 'wetSkin') && wetSkin.map(item => (
+                        <Item key={item.id} id={item.id} itemData={item}/>
+                    ))}
+                    {(categoriesToShow.length > 1) && drySkin.concat(wetSkin).map(item => (
+                        <Item key={item.id} id={item.id} itemData={item}/>
+                    ))}
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Price.module.scss'
 import Typography from '@mui/material/Typography';
-import {priceForPedicure} from '../../data/priceForPedicure';
+import {priceForPedicure} from '../../data/store/priceForPedicure';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
