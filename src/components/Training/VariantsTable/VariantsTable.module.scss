@@ -1,0 +1,31 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
+.container {
+  @include componentContainer;
+  .variants {
+    @include innerContainerWithoutShadow;
+    @include flexCenter;
+    flex-direction: column;
+
+    .variantsTitle {
+      @include fontTitle;
+    }
+
+    .variantsDescription {
+      @include flexCenter;
+      .restInfoBlock {
+        margin-left: 30px;
+        .restInfo{
+          display: flex;
+          .value {
+            @include fontRestInfo;
+            padding: 5px 0;
+            margin-left: 5px;
+          }
+        }
+
+      }
+    }
+  }
+}

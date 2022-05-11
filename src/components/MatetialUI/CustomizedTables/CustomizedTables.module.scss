@@ -1,0 +1,30 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
+.container {
+  .table {
+    min-width: 250px;
+    width: 300px;
+    background-color: $mainColor;
+    .tableHead {
+      .tableRow {
+        .tableCell {
+          @include fontDescription;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+
+    .tableBody {
+      background-color: $mainColor;
+
+      .tableRow {
+        .tableCell {
+          @include fontDescription;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

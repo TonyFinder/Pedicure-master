@@ -1,0 +1,49 @@
+@import "src/data/mixins";
+@import "src/data/variables";
+
+.container {
+  @include innerContainerWithShadow;
+  @include flexCenter;
+  flex-direction: column;
+
+  .title {
+    @include fontTitle;
+  }
+
+  .valueContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+    .images {
+      width: 100px;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    .bullet {
+      margin-left: 15px;
+      .bulletTitle{
+        @include fontDescription;
+        font-weight: 600;
+      }
+      .bulletDescription {
+        width: 100%;
+        margin-left: 20px;
+        @include fontDescription;
+        @media (max-width: 450px) {
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}

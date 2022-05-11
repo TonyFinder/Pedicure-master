@@ -1,18 +1,14 @@
-import styles from './Training.module.scss';
-import Typography from '@mui/material/Typography';
 import React from 'react';
-import {trainingInfo} from '../../data/store/trainingInfo';
+import {VariantsTable} from './VariantsTable/VariantsTable';
+import {Benefits} from './Benefits/Benefits';
+import {TrainingIntroduction} from './TrainingIntroduction/TrainingIntroduction';
 
 export const Training = () => {
-    return(
-        <div className={styles.container}>
-            <div className={styles.innerContainer}>
-                <Typography variant={'h2'}
-                            className={styles.title}>{trainingInfo.header.toUpperCase()}</Typography>
-                <div className={styles.valueContainer}>
-
-                </div>
-            </div>
-        </div>
+    return (
+        <>
+            <TrainingIntroduction/>
+            <Benefits/>
+            <VariantsTable/>
+        </>
     )
 }
