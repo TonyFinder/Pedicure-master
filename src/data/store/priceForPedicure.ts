@@ -22,4 +22,4 @@ export const priceForPedicure = {
 }
 
 // types
-export type priceForPedicureType = typeof priceForPedicure
+export type PriceForPedicureStateType = typeof priceForPedicure
