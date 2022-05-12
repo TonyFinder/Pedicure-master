@@ -2,16 +2,23 @@
 @import "src/data/mixins";
 
 .container {
+  @include flexCenter;
   .table {
     min-width: 250px;
     width: 300px;
     background-color: $mainColor;
+    @media (max-width: 450px) {
+      width: 250px;
+    }
     .tableHead {
       .tableRow {
         .tableCell {
           @include fontDescription;
           font-weight: 600;
           text-align: center;
+          @media (max-width: 450px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -23,6 +30,9 @@
         .tableCell {
           @include fontDescription;
           font-size: 14px;
+          @media (max-width: 450px) {
+            font-size: 12px;
+          }
         }
       }
     }

@@ -1,7 +1,8 @@
 import styles from './Introduction.module.scss';
-import {mainPageImages, introductionValues} from '../../../data/images';
+import {mainPageImages} from '../../../data/store/restImages';
 import React from 'react';
 import Typography from '@mui/material/Typography';
+import {introductionValues} from '../../../data/store/mainPageState';
 
 export const Introduction = () => {
 

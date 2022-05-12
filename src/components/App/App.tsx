@@ -6,9 +6,9 @@ import {Footer} from '../Footer/Footer';
 import {Main} from '../Main/Main';
 import {Price} from '../Price/Price';
 import {Route, Routes} from 'react-router-dom';
-import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
 import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 import {Training} from '../Training/Training';
+import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
 
 const theme = createTheme({
     palette: {
@@ -25,8 +25,8 @@ export const App = () => {
         <div className={styles.appContainer}>
             <Routes>
                 <Route path="/" element={<Main/>}/>
-                <Route path="/training" element={<UnderDevelopment/>}/>
-                <Route path="/trainingTrial" element={<Training/>}/>
+                <Route path="/training" element={<Training/>}/>
+                <Route path="/online" element={<UnderDevelopment/>}/>
                 <Route path="/price" element={<Price/>}/>
                 <Route path="/goods" element={<GoodsForSale/>}/>
             </Routes>

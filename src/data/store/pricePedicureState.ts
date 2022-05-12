@@ -1,4 +1,4 @@
-export const priceForPedicure = {
+export const pricePedicureState = {
     header: 'Аппаратный педикюр',
     priceList: [
         {
@@ -22,4 +22,4 @@ export const priceForPedicure = {
 }
 
 // types
-export type PriceForPedicureStateType = typeof priceForPedicure
+export type PriceForPedicureStateType = typeof pricePedicureState

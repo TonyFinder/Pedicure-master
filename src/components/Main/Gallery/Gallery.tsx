@@ -2,9 +2,9 @@ import React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import styles from './Gallery.module.scss'
-import {introductionValues} from '../../../data/images';
 import Typography from '@mui/material/Typography';
 import SwipeTwoToneIcon from '@mui/icons-material/SwipeTwoTone';
+import {introductionValues} from '../../../data/store/mainPageState';
 
 export const Gallery = () => {
 

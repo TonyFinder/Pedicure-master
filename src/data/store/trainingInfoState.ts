@@ -6,7 +6,7 @@ import drawing_3_rev from '../../images/drawings/drawing_3_rev.png'
 import drawing_4_rev from '../../images/drawings/drawing_4_rev.png'
 
 
-export const trainingInfo = {
+export const trainingInfoState = {
     header: 'Индивидуальное обучение',
     title: {
         header: 'Провожу курс повышения квалификации для действующих мастеров на тему',
@@ -52,4 +52,4 @@ export const trainingInfo = {
 }
 
 // types
-export type TrainingInfoStateType = typeof trainingInfo
+export type TrainingInfoStateType = typeof trainingInfoState

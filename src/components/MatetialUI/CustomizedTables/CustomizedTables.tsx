@@ -7,11 +7,11 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import CheckCircleTwoToneIcon from '@mui/icons-material/CheckCircleTwoTone';
 import CancelTwoToneIcon from '@mui/icons-material/CancelTwoTone';
-import {trainingInfo} from '../../../data/store/trainingInfo';
+import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import styles from './CustomizedTables.module.scss'
 
 export const CustomizedTables = () => {
-    const rows = trainingInfo.variants.row
+    const rows = trainingInfoState.variants.row
     const iconCheck = (value: boolean) => value ? <CheckCircleTwoToneIcon color={'success'} fontSize={'small'}/> : <CancelTwoToneIcon color={'error'} fontSize={'small'}/>
 
     return (

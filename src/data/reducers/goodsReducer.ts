@@ -1,4 +1,4 @@
-import {goodsImages} from '../images';
+import {goodsImages} from '../store/restImages';
 
 let initialGoodsState = {
     chosenCategory: [

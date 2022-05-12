@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Price.module.scss'
 import Typography from '@mui/material/Typography';
-import {priceForPedicure} from '../../data/store/priceForPedicure';
+import {pricePedicureState} from '../../data/store/pricePedicureState';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
@@ -11,9 +11,9 @@ export const Price = () => {
         <div className={styles.container}>
             <div className={styles.innerContainer}>
                 <Typography variant={'h2'}
-                            className={styles.title}>{priceForPedicure.header.toUpperCase()}</Typography>
+                            className={styles.title}>{pricePedicureState.header.toUpperCase()}</Typography>
                 <div className={styles.valueContainer}>
-                    {priceForPedicure.priceList.map((procedure, index) => (
+                    {pricePedicureState.priceList.map((procedure, index) => (
                         <div key={index} className={styles.block}>
                             <Divider className={styles.divider}>
                                 <Chip label={procedure.price} className={styles.chip}/>
@@ -23,8 +23,8 @@ export const Price = () => {
                         </div>
                     ))}
                 </div>
-                <Typography className={styles.restInfo}><sup>*</sup>{priceForPedicure.restInfo[0]}</Typography>
-                <Typography className={styles.restInfo}><sup>**</sup>{priceForPedicure.restInfo[1]}</Typography>
+                <Typography className={styles.restInfo}><sup>*</sup>{pricePedicureState.restInfo[0]}</Typography>
+                <Typography className={styles.restInfo}><sup>**</sup>{pricePedicureState.restInfo[1]}</Typography>
             </div>
         </div>
     )

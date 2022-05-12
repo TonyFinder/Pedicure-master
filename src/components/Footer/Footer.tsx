@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import styles from './Footer.module.scss'
-import {icons} from '../../data/images';
+import {icons} from '../../data/store/restImages';
 
 export const Footer = () => {
 
