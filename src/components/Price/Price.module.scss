@@ -3,7 +3,10 @@
 
 .container {
   @include componentContainer;
-
+  @media (min-height: 800px) {
+    min-height: 95vh;
+    margin-top: 0;
+  }
   .innerContainer {
     @include innerContainerWithShadow;
 
@@ -15,7 +18,7 @@
       .block {
         @include flexCenter;
         flex-direction: column;
-        margin: 40px 0px;
+        margin: 40px 0;
 
         .divider {
           width: 230px;

@@ -8,6 +8,7 @@ import {ItemType} from '../../data/reducers/goodsReducer';
 import {Item} from './Item/Item';
 
 export const GoodsForSale = () => {
+    // console.log("GoodsForSale")
 
     const categoriesToShow = useSelector<StoreType, string[]>(state => state.goods.chosenCategory
         .filter(category => category.active).map(category => category.category))

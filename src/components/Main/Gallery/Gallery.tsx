@@ -7,6 +7,7 @@ import SwipeTwoToneIcon from '@mui/icons-material/SwipeTwoTone';
 import {introductionValues} from '../../../data/store/mainPageState';
 
 export const Gallery = () => {
+    // console.log("Gallery")
 
     return (
         <div className={styles.container}>

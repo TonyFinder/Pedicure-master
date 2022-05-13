@@ -6,6 +6,8 @@ import {CustomizedTables} from '../../MatetialUI/CustomizedTables/CustomizedTabl
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 
 export const VariantsTable = () => {
+    // console.log("VariantsTable")
+
     return (
         <div className={styles.container}>
             <div className={styles.variants}>

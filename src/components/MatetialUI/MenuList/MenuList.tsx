@@ -8,6 +8,8 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import Fade from '@mui/material/Fade';
 
 export const MenuList = () => {
+    // console.log("MenuList")
+
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {

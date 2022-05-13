@@ -7,6 +7,7 @@ import {MenuList} from '../MatetialUI/MenuList/MenuList';
 import Button from '@mui/material/Button';
 
 export const Header = () => {
+    // console.log("Header")
 
     return <Box sx={{flexGrow: 1}} className={styles.box}>
         <AppBar>

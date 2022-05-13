@@ -10,6 +10,8 @@ type ItemPropsType = {
 
 
 export const Item = ({itemData}: ItemPropsType) => {
+    // console.log("Item")
+
     let text = itemData.description
     const [description, setDescription] = useState<string[]>(text.action)
     const buttonActiveColor = {backgroundColor: "#39446f", color: "white"}

@@ -11,6 +11,8 @@ import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import styles from './CustomizedTables.module.scss'
 
 export const CustomizedTables = () => {
+    // console.log("CustomizedTables")
+
     const rows = trainingInfoState.variants.row
     const iconCheck = (value: boolean) => value ? <CheckCircleTwoToneIcon color={'success'} fontSize={'small'}/> : <CancelTwoToneIcon color={'error'} fontSize={'small'}/>
 

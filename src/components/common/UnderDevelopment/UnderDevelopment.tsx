@@ -3,6 +3,7 @@ import styles from './UnderDevelopment.module.scss'
 import Typography from '@mui/material/Typography';
 
 export const UnderDevelopment = () => {
+    // console.log("UnderDevelopment")
 
     return (
         <div className={styles.container}>

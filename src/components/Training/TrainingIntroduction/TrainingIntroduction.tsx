@@ -5,6 +5,8 @@ import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import KeyboardDoubleArrowDownTwoToneIcon from '@mui/icons-material/KeyboardDoubleArrowDownTwoTone';
 
 export const TrainingIntroduction = () => {
+    // console.log("TrainingIntroduction")
+
     return (
         <div className={styles.container}>
             <Typography variant={'h2'}
@@ -17,7 +19,7 @@ export const TrainingIntroduction = () => {
                                 className={styles.courseDescription}>{trainingInfoState.title.description}</Typography>
                 </div>
             </div>
-            <KeyboardDoubleArrowDownTwoToneIcon color={'primary'} fontSize={'large'} sx={{marginTop: '50px'}}/>
+            <KeyboardDoubleArrowDownTwoToneIcon className={styles.icon} color={'primary'} fontSize={'large'}/>
         </div>
     );
 };

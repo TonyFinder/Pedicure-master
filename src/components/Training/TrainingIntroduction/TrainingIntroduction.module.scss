@@ -30,5 +30,11 @@
       }
     }
   }
+  .icon {
+    margin-top: 50px;
+    @media (min-height: 800px) {
+      display: none;
+    }
+  }
 
 }

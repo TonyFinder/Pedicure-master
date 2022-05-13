@@ -8,6 +8,8 @@ import {StoreType} from '../../../data/store/store';
 import {chooseCategoryAC} from '../../../data/reducers/goodsReducer';
 
 export const SelectAutoWidth = () => {
+    // console.log("SelectAutoWidth")
+
     const dispatch = useDispatch()
     const category = useSelector<StoreType, string | undefined>(state => {
         let countChosenCategories = state.goods.chosenCategory.filter(category => category.active).length

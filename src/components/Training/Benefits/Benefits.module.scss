@@ -34,10 +34,16 @@
 
       .bullet {
         margin-left: 20px;
+        @media (max-width: 450px) {
+          margin-left: 0;
+        }
         .bulletTitle{
           @include fontDescription;
           font-weight: 600;
           margin-bottom: 5px;
+          @media (max-width: 450px) {
+            margin-top: 10px;
+          }
         }
         .bulletDescription {
           width: 100%;
@@ -48,9 +54,6 @@
             font-size: 14px;
             font-weight: 500;
           }
-        }
-        @media (max-width: 450px) {
-          margin-left: 0;
         }
       }
 

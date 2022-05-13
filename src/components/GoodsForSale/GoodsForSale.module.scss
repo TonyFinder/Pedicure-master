@@ -4,6 +4,10 @@
 .container {
   @include componentContainer;
   align-items: flex-start;
+  @media (min-height: 800px) {
+    min-height: 95vh;
+    margin-top: 0;
+  }
 
   .innerContainer {
     @include innerContainerWithoutShadow;

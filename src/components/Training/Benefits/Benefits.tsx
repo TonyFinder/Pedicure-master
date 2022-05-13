@@ -5,6 +5,8 @@ import {trainingInfoState} from '../../../data/store/trainingInfoState';
 
 
 export const Benefits = () => {
+    // console.log("Benefits")
+
     const data = trainingInfoState.bullets
 
     return (

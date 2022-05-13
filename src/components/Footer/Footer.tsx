@@ -6,6 +6,7 @@ import styles from './Footer.module.scss'
 import {icons} from '../../data/store/restImages';
 
 export const Footer = () => {
+    // console.log("Footer")
 
     return <Box sx={{flexGrow: 1}} className={styles.box}>
         <AppBar position={'static'}>

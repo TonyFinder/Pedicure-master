@@ -7,17 +7,20 @@ import {HashRouter} from 'react-router-dom';
 import {ScrollToTop} from './components/common/ScrollToTop/ScrollToTop';
 import {Provider} from 'react-redux';
 import {store} from './data/store/store';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
+    <HelmetProvider>
         <Provider store={store}>
             <HashRouter>
                 <ScrollToTop/>
                 <App/>
             </HashRouter>
         </Provider>
+    </HelmetProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

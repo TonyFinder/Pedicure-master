@@ -9,6 +9,7 @@ import {Route, Routes} from 'react-router-dom';
 import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 import {Training} from '../Training/Training';
 import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
+import {Helmet} from 'react-helmet-async';
 
 const theme = createTheme({
     palette: {
@@ -19,8 +20,17 @@ const theme = createTheme({
 });
 
 export const App = () => {
+    // console.log("App")
 
     return <ThemeProvider theme={theme}>
+        <Helmet>
+            <title>Pedicure</title>
+            <meta
+                name="description"
+                content="Педикюр онлайн курс, обучение, педикюр, педикюр лето, лучший педикюр, идеи педикюра, обучение педикюр, онлайн обучение педикюр, педикюр 2022, pedicure, pedicure courses"/>
+            <link rel="canonical" href="/"/>
+        </Helmet>
+
         <Header/>
         <div className={styles.appContainer}>
             <Routes>

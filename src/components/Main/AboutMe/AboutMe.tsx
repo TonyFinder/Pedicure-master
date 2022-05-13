@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import {introductionValues} from '../../../data/store/mainPageState';
 
 export const AboutMe = () => {
+    // console.log("AboutMe")
 
     return (
         <div className={styles.container}>

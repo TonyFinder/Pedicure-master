@@ -6,6 +6,7 @@ import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
 export const Price = () => {
+    // console.log("Price")
 
     return (
         <div className={styles.container}>
