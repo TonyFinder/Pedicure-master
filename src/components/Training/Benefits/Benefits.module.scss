@@ -3,6 +3,11 @@
 
 .container {
   @include componentContainer;
+  margin-top: $appHeaderWidthFirst + 25px;
+
+  @media (max-width: 600px) {
+    margin-top: $appHeaderWidthSecond + 25px;
+  }
   .innerContainer {
     @include innerContainerWithShadow;
     @include flexCenter;

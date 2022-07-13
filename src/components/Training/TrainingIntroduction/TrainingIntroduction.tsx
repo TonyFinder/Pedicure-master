@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './TrainingIntroduction.module.scss';
 import Typography from '@mui/material/Typography';
 import {trainingInfoState} from '../../../data/store/trainingInfoState';
-import KeyboardDoubleArrowDownTwoToneIcon from '@mui/icons-material/KeyboardDoubleArrowDownTwoTone';
+import {ScrollDown} from '../../common/ScrollDown/ScrollDown';
 
 export const TrainingIntroduction = () => {
     // console.log("TrainingIntroduction")
@@ -19,7 +19,9 @@ export const TrainingIntroduction = () => {
                                 className={styles.courseDescription}>{trainingInfoState.title.description}</Typography>
                 </div>
             </div>
-            <KeyboardDoubleArrowDownTwoToneIcon className={styles.icon} color={'primary'} fontSize={'large'}/>
+
+            <ScrollDown />
+
         </div>
-    );
-};
+    )
+}

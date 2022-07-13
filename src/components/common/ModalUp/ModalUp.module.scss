@@ -4,6 +4,7 @@
 .container {
   position: fixed;
   bottom: $appHeaderWidthFirst; right: 15px;
+  border-radius: 50%;
   .icon {
     font-size: 45px;
     color: $secondaryColor;

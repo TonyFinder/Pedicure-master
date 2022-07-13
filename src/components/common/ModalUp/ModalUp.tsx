@@ -22,7 +22,7 @@ export const ModalUp = ({speed}: ModalUpType) => {
             if (lastState < window.scrollY) clearInterval(innerTimer)
             lastState = window.scrollY
 
-            window.scroll(0, lastState - step);
+            window.scroll(0, lastState - step)
             if (window.scrollY === 0) clearInterval(innerTimer)
         }, 50)
     }
