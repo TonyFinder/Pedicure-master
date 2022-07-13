@@ -2,6 +2,7 @@
 @import "src/data/mixins";
 
 .appContainer {
+  position: relative;
   @include appContainer;
   margin-top: $appHeaderWidthFirst;
   @media (max-width: 600px) {

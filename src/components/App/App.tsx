@@ -10,6 +10,7 @@ import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 import {Training} from '../Training/Training';
 import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
 import {Helmet} from 'react-helmet-async';
+import {ModalUp} from '../common/ModalUp/ModalUp';
 
 const theme = createTheme({
     palette: {
@@ -42,5 +43,6 @@ export const App = () => {
             </Routes>
         </div>
         <Footer/>
+        <ModalUp speed={20}/>
     </ThemeProvider>
 }

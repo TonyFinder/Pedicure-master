@@ -10,7 +10,7 @@ export const Header = () => {
     // console.log("Header")
 
     return <Box sx={{flexGrow: 1}} className={styles.box}>
-        <AppBar>
+        <AppBar className={styles.appBar}>
             <Toolbar className={styles.toolbar}>
                 <MenuList/>
                 <a href={'https://wa.me/79510215025'} target={'_blank'} rel="noreferrer">
