@@ -23,7 +23,8 @@ export const ModalUp = ({speed}: ModalUpType) => {
             lastState = window.scrollY
 
             window.scroll(0, lastState - step)
-            if (window.scrollY === 0) clearInterval(innerTimer)
+            // in Chrome for IOS scroll to 0 moves the header
+            if (window.scrollY < 60) clearInterval(innerTimer)
         }, 50)
     }
 
