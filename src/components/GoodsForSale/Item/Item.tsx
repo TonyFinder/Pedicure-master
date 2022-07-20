@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import {ItemType} from '../../../data/reducers/goodsReducer';
 import {useState} from 'react';
 
+const Rotate = require("react-reveal/Rotate")
+
 type ItemPropsType = {
     itemData: ItemType
 }
@@ -18,6 +20,7 @@ export const Item = ({itemData}: ItemPropsType) => {
     const onClickHandler = (value: string[]) => setDescription(value)
 
     return (
+        <Rotate bottom right>
             <div className={styles.container}>
                 <div className={styles.title}>
                     {itemData.title}
@@ -54,5 +57,6 @@ export const Item = ({itemData}: ItemPropsType) => {
                     </div>
                 </div>
             </div>
+        </Rotate>
     )
 }
