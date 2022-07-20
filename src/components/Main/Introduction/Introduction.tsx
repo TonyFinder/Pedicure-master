@@ -3,6 +3,7 @@ import {mainPageImages} from '../../../data/store/restImages';
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import {introductionValues} from '../../../data/store/mainPageState';
+import Tilt from 'react-parallax-tilt';
 
 export const Introduction = () => {
     // console.log("Introduction")
@@ -10,9 +11,11 @@ export const Introduction = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-                <div className={styles.image}>
-                    <img src={mainPageImages.anna} alt={'author'}/>
-                </div>
+                <Tilt>
+                    <div className={styles.image}>
+                        <img src={mainPageImages.anna} alt={'author'}/>
+                    </div>
+                </Tilt>
                 <div className={styles.greetings}>
                     <Typography variant={'h1'}
                                 className={styles.title}>{introductionValues.greetings.header.anna.toUpperCase()}</Typography>
