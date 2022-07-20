@@ -18,7 +18,7 @@ export const Introduction = () => {
                         <img src={mainPageImages.anna} alt={'author'}/>
                     </div>
                 </Tilt>
-                <Zoom>
+                <Zoom cascade>
                     <div className={styles.greetings}>
                         <Typography variant={'h1'}
                                     className={styles.title}>{introductionValues.greetings.header.anna.toUpperCase()}</Typography>

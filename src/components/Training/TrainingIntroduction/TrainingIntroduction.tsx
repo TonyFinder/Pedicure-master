@@ -11,7 +11,7 @@ export const TrainingIntroduction = () => {
 
     return (
         <div className={styles.container}>
-            <Zoom>
+            <Zoom cascade>
                 <Typography variant={'h2'}
                             className={styles.title}>{trainingInfoState.header.toUpperCase()}</Typography>
                 <div className={styles.innerContainer}>

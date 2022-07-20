@@ -3,7 +3,7 @@ import styles from './Benefits.module.scss';
 import Typography from '@mui/material/Typography';
 import {trainingInfoState} from '../../../data/store/trainingInfoState';
 
-const Fade = require("react-reveal/Fade")
+const Zoom = require("react-reveal/Zoom")
 
 export const Benefits = () => {
     // console.log("Benefits")
@@ -13,13 +13,13 @@ export const Benefits = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-                <Fade top>
+                <Zoom cascade>
                     <Typography variant={'h2'}
                                 className={styles.title}>{data.header.toUpperCase()}</Typography>
-                </Fade>
+                </Zoom>
 
                 {data.items.map((value, index) => (
-                    <Fade key={index} bottom>
+                    <Zoom key={index} cascade>
                         <div className={styles.valueContainer}>
                             <div className={styles.images}>
                                 <img src={data.images[index].image} alt={'nails'}/>
@@ -31,7 +31,7 @@ export const Benefits = () => {
                                             className={styles.bulletDescription}>{value.description}</Typography>
                             </div>
                         </div>
-                    </Fade>
+                    </Zoom>
                 ))
                 }
             </div>

@@ -13,7 +13,7 @@ export const Price = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-                <Zoom>
+                <Zoom cascade>
                     <Typography variant={'h2'}
                                 className={styles.title}>{pricePedicureState.header.toUpperCase()}</Typography>
                     <div className={styles.valueContainer}>
@@ -28,7 +28,7 @@ export const Price = () => {
                         ))}
                     </div>
                 </Zoom>
-                <Zoom right>
+                <Zoom cascade>
                     <Typography className={styles.restInfo}><sup>*</sup>{pricePedicureState.restInfo[0]}</Typography>
                     <Typography className={styles.restInfo}><sup>**</sup>{pricePedicureState.restInfo[1]}</Typography>
                 </Zoom>
