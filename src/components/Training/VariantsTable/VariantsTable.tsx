@@ -19,9 +19,7 @@ export const VariantsTable = () => {
                 </Zoom>
 
                 <div className={styles.variantsDescription}>
-                    <Zoom cascade>
-                        <CustomizedTables/>
-                    </Zoom>
+                    <CustomizedTables/>
                     <Zoom cascade>
                         <div className={styles.restInfoBlock}>
                             {trainingInfoState.restInfo.map((value, index) => <div key={index}

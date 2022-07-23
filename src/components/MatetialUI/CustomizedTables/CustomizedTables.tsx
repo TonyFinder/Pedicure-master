@@ -10,6 +10,8 @@ import CancelTwoToneIcon from '@mui/icons-material/CancelTwoTone';
 import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import styles from './CustomizedTables.module.scss'
 
+const Zoom = require("react-reveal/Zoom")
+
 export const CustomizedTables = () => {
     // console.log("CustomizedTables")
 
@@ -18,28 +20,32 @@ export const CustomizedTables = () => {
 
     return (
         <TableContainer sx={{width: '300px'}} className={styles.container}>
-            <Table aria-label="simple table" className={styles.table}>
-                <TableHead className={styles.tableHead}>
-                    <TableRow className={styles.tableRow}>
-                        <TableCell className={styles.tableCell}>Что делаем</TableCell>
-                        <TableCell className={styles.tableCell}>№1</TableCell>
-                        <TableCell className={styles.tableCell}>№2</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody className={styles.tableBody}>
-                    {rows.map(row => (
-                        <TableRow
-                            key={row.name}
-                            className={styles.tableRow}
-                            sx={{'&:last-child td, &:last-child th': {border: 0}}}
-                        >
-                            <TableCell className={styles.tableCell} component="th" scope="row">{row.name}</TableCell>
-                            <TableCell className={styles.tableCell} align="right">{iconCheck(row.first)}</TableCell>
-                            <TableCell className={styles.tableCell} align="right">{iconCheck(row.second)}</TableCell>
+            <Zoom cascade>
+                <Table aria-label="simple table" className={styles.table}>
+                    <TableHead className={styles.tableHead}>
+                        <TableRow className={styles.tableRow}>
+                            <TableCell className={styles.tableCell}>Что делаем</TableCell>
+                            <TableCell className={styles.tableCell}>№1</TableCell>
+                            <TableCell className={styles.tableCell}>№2</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
+                    </TableHead>
+                    <TableBody className={styles.tableBody}>
+                        {rows.map(row => (
+                            <TableRow
+                                key={row.name}
+                                className={styles.tableRow}
+                                sx={{'&:last-child td, &:last-child th': {border: 0}}}
+                            >
+                                <TableCell className={styles.tableCell} component="th"
+                                           scope="row">{row.name}</TableCell>
+                                <TableCell className={styles.tableCell} align="right">{iconCheck(row.first)}</TableCell>
+                                <TableCell className={styles.tableCell}
+                                           align="right">{iconCheck(row.second)}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </Zoom>
         </TableContainer>
     );
 }
