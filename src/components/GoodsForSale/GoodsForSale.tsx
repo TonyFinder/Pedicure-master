@@ -3,17 +3,17 @@ import styles from './GoodsForSale.module.scss'
 import Typography from '@mui/material/Typography';
 import {SelectAutoWidth} from '../MatetialUI/SelectAutoWidth/SelectAutoWidth';
 import {useSelector} from 'react-redux';
-import {StoreType} from '../../data/store/store';
+import {AppStateRootType} from '../../data/store/store';
 import {ItemType} from '../../data/reducers/goodsReducer';
 import {Item} from './Item/Item';
 
 export const GoodsForSale = () => {
     // console.log("GoodsForSale")
 
-    const categoriesToShow = useSelector<StoreType, string[]>(state => state.goods.chosenCategory
+    const categoriesToShow = useSelector<AppStateRootType, string[]>(state => state.goods.chosenCategory
         .filter(category => category.active).map(category => category.category))
-    const drySkin = useSelector<StoreType, ItemType[]>(state => state.goods.drySkin)
-    const wetSkin = useSelector<StoreType, ItemType[]>(state => state.goods.wetSkin)
+    const drySkin = useSelector<AppStateRootType, ItemType[]>(state => state.goods.drySkin)
+    const wetSkin = useSelector<AppStateRootType, ItemType[]>(state => state.goods.wetSkin)
 
     return (
         <div className={styles.container}>

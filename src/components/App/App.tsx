@@ -8,9 +8,9 @@ import {Price} from '../Price/Price';
 import {Route, Routes} from 'react-router-dom';
 import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 import {Training} from '../Training/Training';
-import {UnderDevelopment} from '../common/UnderDevelopment/UnderDevelopment';
 import {Helmet} from 'react-helmet-async';
 import {ModalUp} from '../common/ModalUp/ModalUp';
+import {Online} from '../Online/Online';
 
 const theme = createTheme({
     palette: {
@@ -37,7 +37,7 @@ export const App = () => {
             <Routes>
                 <Route path="/" element={<Main/>}/>
                 <Route path="/training" element={<Training/>}/>
-                <Route path="/online" element={<UnderDevelopment/>}/>
+                <Route path="/online" element={<Online/>}/>
                 <Route path="/price" element={<Price/>}/>
                 <Route path="/goods" element={<GoodsForSale/>}/>
             </Routes>

@@ -4,7 +4,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom';
 import styles from './MenuList.module.scss'
-import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import Fade from '@mui/material/Fade';
 
 export const MenuList = () => {
@@ -51,10 +50,7 @@ export const MenuList = () => {
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Обучение</MenuItem>
                 </Link>
                 <Link to="/online">
-                    <MenuItem onClick={handleClose} className={styles.menuItem}>
-                        Онлайн курсы
-                        <MiscellaneousServicesIcon className={styles.icon}/>
-                    </MenuItem>
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>Онлайн курсы</MenuItem>
                 </Link>
                 <Link to="/price">
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Прайс на услуги</MenuItem>

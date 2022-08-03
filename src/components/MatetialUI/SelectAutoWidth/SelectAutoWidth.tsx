@@ -4,14 +4,14 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
 import {useDispatch, useSelector} from 'react-redux';
-import {StoreType} from '../../../data/store/store';
+import {AppStateRootType} from '../../../data/store/store';
 import {chooseCategoryAC} from '../../../data/reducers/goodsReducer';
 
 export const SelectAutoWidth = () => {
     // console.log("SelectAutoWidth")
 
     const dispatch = useDispatch()
-    const category = useSelector<StoreType, string | undefined>(state => {
+    const category = useSelector<AppStateRootType, string | undefined>(state => {
         let countChosenCategories = state.goods.chosenCategory.filter(category => category.active).length
         return countChosenCategories === 0
             ? ''
