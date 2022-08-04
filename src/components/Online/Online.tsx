@@ -1,7 +1,7 @@
 import {Discount} from './Discount/Discount';
 
 export const Online = () => {
-    return <div>
+    return <>
         <Discount/>
-    </div>
+    </>
 }

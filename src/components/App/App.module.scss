@@ -5,6 +5,7 @@
   position: relative;
   @include appContainer;
   margin-top: $appHeaderWidthFirst;
+  min-height: 100vh;
   @media (max-width: 600px) {
     margin-top: $appHeaderWidthSecond;
   }

@@ -46,11 +46,11 @@ export const MenuList = () => {
                 <Link to="/">
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Главная</MenuItem>
                 </Link>
+                <Link to="/online">
+                    <MenuItem onClick={handleClose} className={styles.menuItem}>Онлайн курс</MenuItem>
+                </Link>
                 <Link to="/training">
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Обучение</MenuItem>
-                </Link>
-                <Link to="/online">
-                    <MenuItem onClick={handleClose} className={styles.menuItem}>Онлайн курсы</MenuItem>
                 </Link>
                 <Link to="/price">
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Прайс на услуги</MenuItem>
