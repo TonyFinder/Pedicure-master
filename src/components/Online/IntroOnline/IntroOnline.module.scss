@@ -1,0 +1,19 @@
+@import "../../../data/variables";
+@import "../../../data/mixins";
+
+.container {
+  @include componentContainer;
+
+  .innerContainer {
+    @include innerContainerWithoutShadow;
+    @include flexCenter;
+    flex-direction: column;
+
+    .title {
+      @include fontTitle;
+      font-weight: bolder;
+    }
+  }
+}
+
+
