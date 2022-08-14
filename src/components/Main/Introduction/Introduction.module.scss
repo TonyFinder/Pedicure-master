@@ -3,6 +3,7 @@
 
 .container {
   @include componentContainer;
+  margin-top: 60px;
   @media (max-width: 880px) {
     align-items: flex-start;
   }
@@ -18,7 +19,7 @@
       width: $mainPhotoWidth;
       height: $mainPhotoHeight;
       @media (max-width: 880px) {
-        margin-right: 0px;
+        margin-right: 0;
         width: $mainPhotoWidth * $firstStepPhoto;
         height: $mainPhotoHeight * $firstStepPhoto;
       }
@@ -38,7 +39,7 @@
       @include innerContainerWithShadow;
       box-shadow: 5px -5px 10px 0px $secondaryColor;
       @media (max-width: 880px) {
-        box-shadow: 5px 5px 10px 0px $secondaryColor;
+        box-shadow: 5px 5px 10px 0 $secondaryColor;
       }
 
       .title {
@@ -46,10 +47,17 @@
         margin-bottom: 20px;
       }
 
+      .author {
+        @include fontDescription;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 16px;
+        text-align: center;
+      }
       .mainSign {
         @include fontDescription;
         text-align: center;
-        margin-bottom: 2px;
+        margin: 40px 0;
       }
 
       .directionToMenu {

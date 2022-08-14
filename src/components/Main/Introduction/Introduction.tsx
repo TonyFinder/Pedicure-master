@@ -23,11 +23,8 @@ export const Introduction = () => {
                         <Typography variant={'h1'}
                                     className={styles.title}>{introductionValues.greetings.header.anna.toUpperCase()}</Typography>
                         <div>
-                            {introductionValues.greetings.description.map((description, index) => (
-                                <Typography key={index} className={styles.mainSign}>{description}</Typography>
-                            ))}
-                            <Typography
-                                className={styles.directionToMenu}>{introductionValues.greetings.restInfo}</Typography>
+                            <Typography className={styles.author}>{introductionValues.greetings.author}</Typography>
+                            <Typography className={styles.mainSign}>{introductionValues.greetings.description}</Typography>
                             <Typography className={styles.directionToMenu}>
                                 <a href={'https://www.instagram.com/pedicure.cabinet'} target={'_blank'}
                                    rel="noreferrer">@pedicure.cabinet</a>
