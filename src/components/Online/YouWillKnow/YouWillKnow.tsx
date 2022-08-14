@@ -2,6 +2,7 @@ import React from 'react'
 import Typography from '@mui/material/Typography';
 import {introductionValues} from '../../../data/store/mainPageState';
 import styles from './YouWillKnow.module.scss'
+import {YouTubeFrame} from '../YouTube/YouTube';
 
 const Zoom = require("react-reveal/Zoom")
 
@@ -27,6 +28,7 @@ export const YouWillKnow = () => {
                     </div>
                     ))
                 }
+                    <YouTubeFrame/>
             </div>
         </div>
     )
