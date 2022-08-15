@@ -5,6 +5,7 @@ import styles from './YouWillKnow.module.scss'
 import {YouTubeFrame} from '../YouTube/YouTube';
 
 const Zoom = require("react-reveal/Zoom")
+const LightSpeed = require("react-reveal/LightSpeed")
 
 export const YouWillKnow = () => {
     // console.log("YouWillKnow")
@@ -28,7 +29,9 @@ export const YouWillKnow = () => {
                     </div>
                     ))
                 }
+                <LightSpeed left>
                     <YouTubeFrame/>
+                </LightSpeed >
             </div>
         </div>
     )

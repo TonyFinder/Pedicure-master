@@ -1,9 +1,11 @@
 import React from 'react';
-import {Discount} from './Discount/Discount';
 import {IntroOnline} from './IntroOnline/IntroOnline';
 import {Introduction} from '../Main/Introduction/Introduction';
 import {AboutMe} from '../Main/AboutMe/AboutMe';
 import {YouWillKnow} from './YouWillKnow/YouWillKnow';
+import {Gallery} from '../Main/Gallery/Gallery';
+import {Program} from './Program/Program';
+import {Additions} from './Additions/Additions';
 
 export const Online = () => {
     return <>
@@ -11,6 +13,9 @@ export const Online = () => {
         <Introduction/>
         <AboutMe/>
         <YouWillKnow/>
-        <Discount/>
+        <Gallery/>
+        <Program/>
+        <Additions/>
+        {/*<DiscountCounter/>*/}
     </>
 }

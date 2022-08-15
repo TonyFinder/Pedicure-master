@@ -3,7 +3,6 @@ import styles from './App.module.scss'
 import {Header} from '../Header/Header';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {Footer} from '../Footer/Footer';
-import {Main} from '../Main/Main';
 import {Price} from '../Price/Price';
 import {Route, Routes} from 'react-router-dom';
 import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
@@ -35,9 +34,8 @@ export const App = () => {
         <Header/>
         <div className={styles.appContainer}>
             <Routes>
-                <Route path="/" element={<Main/>}/>
+                <Route path="/" element={<Online/>}/>
                 <Route path="/training" element={<Training/>}/>
-                <Route path="/online" element={<Online/>}/>
                 <Route path="/price" element={<Price/>}/>
                 <Route path="/goods" element={<GoodsForSale/>}/>
             </Routes>

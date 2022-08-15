@@ -44,9 +44,6 @@ export const MenuList = () => {
                 className={styles.links}
             >
                 <Link to="/">
-                    <MenuItem onClick={handleClose} className={styles.menuItem}>Главная</MenuItem>
-                </Link>
-                <Link to="/online">
                     <MenuItem onClick={handleClose} className={styles.menuItem}>Онлайн курс</MenuItem>
                 </Link>
                 <Link to="/training">

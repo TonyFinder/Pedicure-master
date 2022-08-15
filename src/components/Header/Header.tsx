@@ -13,11 +13,9 @@ export const Header = () => {
         <AppBar className={styles.appBar}>
             <Toolbar className={styles.toolbar}>
                 <MenuList/>
-                <a href={'https://wa.me/79510215025'} target={'_blank'} rel="noreferrer">
                     <Button color={'inherit'} size={'large'} style={{padding: 2}}>
-                        ЗАПИСЬ НА ПРОЦЕДУРУ
+                        КУПИТЬ ОНЛАЙН-КУРС
                     </Button>
-                </a>
             </Toolbar>
         </AppBar>
     </Box>

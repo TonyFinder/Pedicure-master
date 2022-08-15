@@ -1,0 +1,57 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
+.container {
+  @include componentContainer;
+  flex-direction: column;
+  text-align: center;
+  .title {
+    @include fontTitle;
+    margin-top: 60px;
+  }
+
+  .innerContainer {
+    @include innerContainerWithShadow;
+    width: 70%;
+
+    .innerBlock {
+      .additionTitle {
+        @include fontTitleForInnerBlock;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        @media (max-width: 450px) {
+          font-size: 18px;
+        }
+      }
+
+      .bulletsBlock {
+        .bullet {
+          @include fontDescription;
+          font-weight: 500;
+          text-align: center;
+          font-style: italic;
+          margin: 50px 0;
+          @media (max-width: 450px) {
+            font-size: 14px;
+          }
+
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            left: 50%;
+            width: 80px;
+            height: 2px;
+            background-color: $secondaryColor;
+            transform: translate(-50%, 50%);
+          }
+          p {
+            font-weight: 800;
+          }
+        }
+      }
+
+    }
+  }
+
+}
