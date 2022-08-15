@@ -1,0 +1,6 @@
+@import "../../../data/variables";
+@import "../../../data/mixins";
+
+.mainBlock {
+  @include youTubeSteps;
+}

@@ -5,6 +5,10 @@
   @include componentContainer;
   flex-direction: column;
   text-align: center;
+  @media (min-height: 1100px) {
+    min-height: 95vh;
+    margin-top: 0;
+  }
   .title {
     @include fontTitle;
   }

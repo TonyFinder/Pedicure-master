@@ -3,6 +3,10 @@
 
 .container {
   @include componentContainer;
+  @media (min-height: 1100px) {
+    min-height: 95vh;
+    margin-top: 0;
+  }
 
   .innerContainer {
     @include innerContainerWithoutShadow;
@@ -32,6 +36,7 @@
       }
       .bulletInfo {
         @include fontDescription;
+        text-align: center;
       }
     }
   }

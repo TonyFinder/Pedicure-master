@@ -1,5 +1,5 @@
 import anna from '../../images/anna.jpg';
-import nails7 from '../../images/nails/7.jpg';
+import nails7 from '../../images/films/20f.jpg';
 import whatsApp from '../../images/icons/whatsApp.png';
 import instagram from '../../images/icons/instagram.png';
 import vk from '../../images/icons/vk.png';

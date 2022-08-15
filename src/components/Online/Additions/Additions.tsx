@@ -16,7 +16,7 @@ export const Additions = () => {
             </Zoom>
 
             { introductionValues.discount.blocks.map(block =>
-                <Zoom cascade>
+                <Zoom cascade key={block.id}>
                     <div key={block.id} className={styles.innerContainer}>
                         <div className={styles.innerBlock}>
                             <Zoom cascade>
@@ -26,7 +26,7 @@ export const Additions = () => {
 
                             <div className={styles.bulletsBlock}>
                                 { block.lessons.map(add =>
-                                    <Zoom cascade>
+                                    <Zoom cascade key={add.id}>
                                         <Typography variant={'subtitle1'}
                                                     className={styles.bullet}>{add.value}<p>{add.add && add.add}</p></Typography>
                                     </Zoom>

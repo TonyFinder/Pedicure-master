@@ -14,7 +14,7 @@ export const Header = () => {
             <Toolbar className={styles.toolbar}>
                 <MenuList/>
                     <Button color={'inherit'} size={'large'} style={{padding: 2}}>
-                        КУПИТЬ ОНЛАЙН-КУРС
+                        КУПИТЬ КУРС
                     </Button>
             </Toolbar>
         </AppBar>

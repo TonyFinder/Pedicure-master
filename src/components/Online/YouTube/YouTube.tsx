@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube, { YouTubeProps } from 'react-youtube';
+import styles from './YouTube.module.scss'
 
 export const YouTubeFrame = () => {
     const onPlayerReady: YouTubeProps['onReady'] = (event) => {
@@ -14,5 +15,5 @@ export const YouTubeFrame = () => {
         },
     };
 
-    return <YouTube videoId="ifGVhvkwb-c" style={{height: '390px', width: '640px'}} opts={opts} onReady={onPlayerReady} />;
+    return <YouTube videoId="ifGVhvkwb-c" className={styles.mainBlock} opts={opts} onReady={onPlayerReady} />;
 }

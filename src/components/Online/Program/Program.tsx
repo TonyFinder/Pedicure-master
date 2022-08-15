@@ -16,7 +16,7 @@ export const Program = () => {
             </Zoom>
 
             { introductionValues.program.blocks.map(block =>
-                <Zoom cascade>
+                <Zoom cascade key={block.id}>
                 <div key={block.id} className={styles.innerContainer}>
                     <div className={styles.innerBlock}>
                         <Zoom cascade>
@@ -26,7 +26,7 @@ export const Program = () => {
 
                         <div className={styles.lessonsBlock}>
                         { block.lessons.map(lesson =>
-                            <Zoom cascade>
+                            <Zoom cascade key={lesson.id}>
                             <Typography variant={'subtitle1'}
                                         className={styles.lessons}><span>{lesson.mark}</span>{lesson.value}</Typography>
                             </Zoom>
