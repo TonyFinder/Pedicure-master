@@ -51,10 +51,16 @@
             background-color: $secondaryColor;
             transform: translate(-50%, 50%);
           }
-          p {
+          span {
             font-weight: 800;
           }
         }
+      }
+
+      .remarks {
+        @include fontRestInfo;
+        text-align: left;
+        font-size: 12px;
       }
 
     }

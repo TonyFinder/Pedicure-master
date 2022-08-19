@@ -1,0 +1,43 @@
+@import "../../../data/variables";
+@import "../../../data/mixins";
+
+.container {
+  @include componentContainer;
+  align-items: flex-start;
+  min-height: auto;
+  margin: 50px 0;
+
+  .innerContainer {
+    @include innerContainerWithShadow;
+    @include flexCenter;
+    flex-direction: column;
+
+    .title {
+      @include fontTitle;
+      font-size: 32px;
+      font-weight: bolder;
+    }
+    .price {
+      @include fontRestInfo;
+      font-size: 26px;
+      //font-style: italic;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .bulletBlock {
+      margin-bottom: 50px;
+      .bullet {
+        @include fontDescription;
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+}
+
+

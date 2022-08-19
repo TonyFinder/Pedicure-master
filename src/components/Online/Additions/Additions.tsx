@@ -28,7 +28,17 @@ export const Additions = () => {
                                 { block.lessons.map(add =>
                                     <Zoom cascade key={add.id}>
                                         <Typography variant={'subtitle1'}
-                                                    className={styles.bullet}>{add.value}<p>{add.add && add.add}</p></Typography>
+                                                    className={styles.bullet}>{add.value}<span>{add.add && add.add}</span></Typography>
+                                    </Zoom>
+                                )
+                                }
+                            </div>
+
+                            <div className={styles.remarks}>
+                                { block.description.map(remark =>
+                                    <Zoom cascade key={remark.id}>
+                                        <Typography variant={'subtitle1'}
+                                                    className={styles.remarks}>{remark.add}</Typography>
                                     </Zoom>
                                 )
                                 }

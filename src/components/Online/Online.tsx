@@ -6,6 +6,7 @@ import {YouWillKnow} from './YouWillKnow/YouWillKnow';
 import {Gallery} from '../Main/Gallery/Gallery';
 import {Program} from './Program/Program';
 import {Additions} from './Additions/Additions';
+import {Buy} from './Buy/Buy';
 
 export const Online = () => {
     return <>
@@ -16,6 +17,7 @@ export const Online = () => {
         <Gallery/>
         <Program/>
         <Additions/>
+        <Buy/>
         {/*<DiscountCounter/>*/}
     </>
 }

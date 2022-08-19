@@ -15,5 +15,5 @@ export const YouTubeFrame = () => {
         },
     };
 
-    return <YouTube videoId="ifGVhvkwb-c" className={styles.mainBlock} opts={opts} onReady={onPlayerReady} />;
+    return <YouTube videoId="lm5EiEVtZHE" className={styles.mainBlock} opts={opts} onReady={onPlayerReady} />;
 }
