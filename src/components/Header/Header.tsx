@@ -13,9 +13,13 @@ export const Header = () => {
         <AppBar className={styles.appBar}>
             <Toolbar className={styles.toolbar}>
                 <MenuList/>
-                <Button color={'inherit'} size={'large'} style={{padding: 2}}>
-                    КУПИТЬ КУРС
-                </Button>
+
+                <a href={'https://pedicure-cabinet.online/register'}>
+                    <Button color={'inherit'} size={'large'} style={{padding: 2}}>
+                        КУПИТЬ КУРС
+                    </Button>
+                </a>
+
             </Toolbar>
         </AppBar>
     </Box>

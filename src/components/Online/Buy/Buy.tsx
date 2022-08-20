@@ -31,9 +31,11 @@ export const Buy = () => {
                     }
                 </div>
 
-                <Button className={styles.button}>
-                    Купить курс
-                </Button>
+                <a href={'https://pedicure-cabinet.online/register'}>
+                    <Button className={styles.button}>
+                        Купить курс
+                    </Button>
+                </a>
 
             </div>
 
