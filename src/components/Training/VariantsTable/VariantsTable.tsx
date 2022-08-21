@@ -5,7 +5,7 @@ import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import {CustomizedTables} from '../../MatetialUI/CustomizedTables/CustomizedTables';
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const VariantsTable = () => {
     // console.log("VariantsTable")
@@ -13,14 +13,14 @@ export const VariantsTable = () => {
     return (
         <div className={styles.container}>
             <div className={styles.variants}>
-                <Zoom cascade>
+                {/*<Zoom cascade>*/}
                     <Typography variant={'h3'}
                                 className={styles.variantsTitle}>{trainingInfoState.variants.header.toUpperCase()}</Typography>
-                </Zoom>
+                {/*</Zoom>*/}
 
                 <div className={styles.variantsDescription}>
                     <CustomizedTables/>
-                    <Zoom cascade>
+                    {/*<Zoom cascade>*/}
                         <div className={styles.restInfoBlock}>
                             {trainingInfoState.restInfo.map((value, index) => <div key={index}
                                                                                    className={styles.restInfo}>
@@ -28,7 +28,7 @@ export const VariantsTable = () => {
                                 <div className={styles.value}>{value}</div>
                             </div>)}
                         </div>
-                    </Zoom>
+                    {/*</Zoom>*/}
                 </div>
             </div>
         </div>

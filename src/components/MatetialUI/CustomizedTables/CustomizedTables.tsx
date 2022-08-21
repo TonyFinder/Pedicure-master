@@ -10,7 +10,7 @@ import CancelTwoToneIcon from '@mui/icons-material/CancelTwoTone';
 import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import styles from './CustomizedTables.module.scss'
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const CustomizedTables = () => {
     // console.log("CustomizedTables")
@@ -20,7 +20,7 @@ export const CustomizedTables = () => {
 
     return (
         <TableContainer sx={{width: '300px'}} className={styles.container}>
-            <Zoom cascade>
+            {/*<Zoom cascade>*/}
                 <Table aria-label="simple table" className={styles.table}>
                     <TableHead className={styles.tableHead}>
                         <TableRow className={styles.tableRow}>
@@ -45,7 +45,7 @@ export const CustomizedTables = () => {
                         ))}
                     </TableBody>
                 </Table>
-            </Zoom>
+            {/*</Zoom>*/}
         </TableContainer>
     );
 }

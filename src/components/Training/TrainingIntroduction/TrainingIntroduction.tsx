@@ -4,14 +4,14 @@ import Typography from '@mui/material/Typography';
 import {trainingInfoState} from '../../../data/store/trainingInfoState';
 import {ScrollDown} from '../../common/ScrollDown/ScrollDown';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const TrainingIntroduction = () => {
     // console.log("TrainingIntroduction")
 
     return (
         <div className={styles.container}>
-            <Zoom cascade>
+            {/*<Zoom cascade>*/}
                 <Typography variant={'h2'}
                             className={styles.title}>{trainingInfoState.header.toUpperCase()}</Typography>
                 <div className={styles.innerContainer}>
@@ -25,7 +25,7 @@ export const TrainingIntroduction = () => {
 
                 <ScrollDown/>
 
-            </Zoom>
+            {/*</Zoom>*/}
         </div>
     )
 }

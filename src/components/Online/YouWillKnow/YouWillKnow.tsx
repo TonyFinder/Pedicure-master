@@ -4,8 +4,8 @@ import {introductionValues} from '../../../data/store/mainPageState';
 import styles from './YouWillKnow.module.scss'
 import {YouTubeFrame} from '../YouTube/YouTube';
 
-const Zoom = require("react-reveal/Zoom")
-const LightSpeed = require("react-reveal/LightSpeed")
+// const Zoom = require("react-reveal/Zoom")
+// const LightSpeed = require("react-reveal/LightSpeed")
 
 export const YouWillKnow = () => {
     // console.log("YouWillKnow")
@@ -15,23 +15,21 @@ export const YouWillKnow = () => {
             <div className={styles.innerContainer}>
                 {introductionValues.youWillKnow.map((block, i) => (
                     <div key={i}>
-                        <Zoom cascade>
+                        {/*<Zoom cascade>*/}
                             <Typography variant={'h2'}
                                         className={styles.title}>{block.description.toUpperCase()}</Typography>
-                        </Zoom>
+                        {/*</Zoom>*/}
                         <div className={styles.bulletBlock}>
-                            {block.info.map(value => <Zoom cascade key={value.id}>
-                                <Typography variant={'h3'}
-                                            className={styles.bullet}>{value.value}</Typography>
-                            </Zoom>)}
+                            {block.info.map(value => <Typography key={value.id} variant={'h3'}
+                                            className={styles.bullet}>{value.value}</Typography>)}
                         </div>
 
                     </div>
                     ))
                 }
-                <LightSpeed left>
+                {/*<LightSpeed left>*/}
                     <YouTubeFrame/>
-                </LightSpeed >
+                {/*</LightSpeed >*/}
             </div>
         </div>
     )

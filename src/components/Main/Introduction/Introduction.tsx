@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import {introductionValues} from '../../../data/store/mainPageState';
 import Tilt from 'react-parallax-tilt';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const Introduction = () => {
     // console.log("Introduction")
@@ -18,7 +18,7 @@ export const Introduction = () => {
                         <img src={mainPageImages.anna} alt={'author'}/>
                     </div>
                 </Tilt>
-                <Zoom cascade>
+                {/*<Zoom cascade>*/}
                     <div className={styles.greetings}>
                         <Typography variant={'h1'}
                                     className={styles.title}>{introductionValues.greetings.header.anna.toUpperCase()}</Typography>
@@ -31,7 +31,7 @@ export const Introduction = () => {
                             </Typography>
                         </div>
                     </div>
-                </Zoom>
+                {/*</Zoom>*/}
             </div>
         </div>
     )

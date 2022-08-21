@@ -5,7 +5,7 @@ import {pricePedicureState} from '../../data/store/pricePedicureState';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const Price = () => {
     // console.log("Price")
@@ -13,7 +13,7 @@ export const Price = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-                <Zoom cascade>
+                {/*<Zoom cascade>*/}
                     <Typography variant={'h2'}
                                 className={styles.title}>{pricePedicureState.header.toUpperCase()}</Typography>
                     <div className={styles.valueContainer}>
@@ -27,11 +27,11 @@ export const Price = () => {
                             </div>
                         ))}
                     </div>
-                </Zoom>
-                <Zoom cascade>
+                {/*</Zoom>*/}
+                {/*<Zoom cascade>*/}
                     <Typography className={styles.restInfo}><sup>*</sup>{pricePedicureState.restInfo[0]}</Typography>
                     <Typography className={styles.restInfo}><sup>**</sup>{pricePedicureState.restInfo[1]}</Typography>
-                </Zoom>
+                {/*</Zoom>*/}
             </div>
         </div>
     )

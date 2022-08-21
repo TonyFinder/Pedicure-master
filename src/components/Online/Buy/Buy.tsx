@@ -4,7 +4,7 @@ import styles from './Buy.module.scss'
 import {introductionValues} from '../../../data/store/mainPageState';
 import {Button} from '../../common/Button/Button';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 export const Buy = () => {
     // console.log("IntroOnline")
@@ -12,21 +12,22 @@ export const Buy = () => {
     return (
         <div className={styles.container}>
             <div className={styles.innerContainer}>
-                <Zoom cascade>
+                {/*<Zoom cascade>*/}
                     <Typography variant={'h1'}
                                 className={styles.title}>{introductionValues.buy.header.toUpperCase()}</Typography>
-                </Zoom>
-                <Zoom cascade>
+                {/*</Zoom>*/}
+                {/*<Zoom cascade>*/}
                     <Typography variant={'h2'}
                                 className={styles.price}>{introductionValues.buy.price}</Typography>
-                </Zoom>
+                {/*</Zoom>*/}
 
                 <div className={styles.bulletBlock}>
                     {introductionValues.buy.bullet.map(bullet => (
-                                <Zoom cascade key={bullet.id}>
-                                    <Typography variant={'h3'}
+                                // <Zoom cascade key={bullet.id}>
+                                    <Typography key={bullet.id} variant={'h3'}
                                                 className={styles.bullet}>{bullet.value}</Typography>
-                                </Zoom>)
+                                // </Zoom>
+                        )
                     )
                     }
                 </div>

@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import {ItemType} from '../../../data/reducers/goodsReducer';
 import {useState} from 'react';
 
-const Zoom = require("react-reveal/Zoom")
+// const Zoom = require("react-reveal/Zoom")
 
 type ItemPropsType = {
     itemData: ItemType
@@ -20,7 +20,7 @@ export const Item = ({itemData}: ItemPropsType) => {
     const onClickHandler = (value: string[]) => setDescription(value)
 
     return (
-        <Zoom cascade>
+        // <Zoom cascade>
             <div className={styles.container}>
                 <div className={styles.title}>
                     {itemData.title}
@@ -57,6 +57,6 @@ export const Item = ({itemData}: ItemPropsType) => {
                     </div>
                 </div>
             </div>
-        </Zoom>
+        // </Zoom>
     )
 }
