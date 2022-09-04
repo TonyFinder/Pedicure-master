@@ -16,7 +16,7 @@ export const Online = () => {
         <YouWillKnow/>
         <Gallery/>
         <Program/>
-        <Additions/>
+        {/*<Additions/>*/}
         <Buy/>
         {/*<DiscountCounter/>*/}
     </>

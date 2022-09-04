@@ -21,7 +21,7 @@ export const Buy = () => {
                                 className={styles.price}>{introductionValues.buy.price}</Typography>
                 {/*</Zoom>*/}
 
-                <div className={styles.bulletBlock}>
+                {/*<div className={styles.bulletBlock}>
                     {introductionValues.buy.bullet.map(bullet => (
                                 // <Zoom cascade key={bullet.id}>
                                     <Typography key={bullet.id} variant={'h3'}
@@ -36,7 +36,18 @@ export const Buy = () => {
                     <Button className={styles.button}>
                         Купить курс
                     </Button>
-                </a>
+                </a>*/}
+
+                <div className={styles.bulletBlock}>
+                    {introductionValues.buy.zaglushka.map(bullet => (
+                            // <Zoom cascade key={bullet.id}>
+                            <Typography key={bullet.id} variant={'h3'}
+                                        className={styles.bullet}>{bullet.value}</Typography>
+                            // </Zoom>
+                        )
+                    )
+                    }
+                </div>
 
             </div>
 
