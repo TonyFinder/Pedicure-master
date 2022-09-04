@@ -10,35 +10,72 @@
   .innerContainer {
     @include innerContainerWithShadow;
 
-    .title {
-      @include fontTitle;
-    }
+    .priceBlock {
+      .title {
+        @include fontTitle;
+      }
 
-    .valueContainer {
-      .block {
-        @include flexCenter;
-        flex-direction: column;
-        margin: 40px 0;
+      .valueContainer {
+        .block {
+          @include flexCenter;
+          flex-direction: column;
+          margin: 40px 0;
 
-        .divider {
-          width: 230px;
+          .divider {
+            width: 230px;
 
-          .chip {
-            @include fontRestInfo;
+            .chip {
+              @include fontRestInfo;
+            }
+          }
+
+          .description {
+            margin-top: 15px;
+            text-align: center;
+            @include fontDescription;
           }
         }
+      }
 
-        .description {
-          margin-top: 15px;
-          text-align: center;
-          @include fontDescription;
-        }
+      .restInfo {
+        @include fontRestInfo;
+        text-align: right;
       }
     }
+    .designBlock {
+      padding-top: 30px;
+      .title {
+        @include fontTitle;
+      }
 
-    .restInfo {
-      @include fontRestInfo;
-      text-align: right;
+      .valueContainer {
+        .block {
+          @include flexCenter;
+          flex-direction: column;
+          margin: 10px 0;
+
+          .divider {
+            width: 180px;
+
+            .chip {
+              @include fontRestInfo;
+              font-size: 12px;
+            }
+          }
+
+          .description {
+            margin-top: 5px;
+            text-align: center;
+            @include fontDescription;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .restInfo {
+        @include fontRestInfo;
+        text-align: right;
+      }
     }
   }
 }
