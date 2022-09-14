@@ -26,7 +26,7 @@
     }
 
     .bulletBlock {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       .bullet {
         @include fontDescription;
         text-align: center;
@@ -35,7 +35,7 @@
     }
 
     .button {
-      margin: 0;
+      margin-bottom: 20px;
     }
   }
 }
