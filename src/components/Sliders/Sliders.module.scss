@@ -1,0 +1,100 @@
+@import "../../data/variables";
+@import "../../data/mixins";
+
+.container {
+  @include componentContainer;
+
+  .innerContainer {
+    @include innerContainerWithoutShadow;
+    @include flexCenter;
+    flex-direction: column;
+
+    .title {
+      @include fontTitle;
+    }
+    .button {
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    .imageList {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: $imageGallerySize * 2 + 80px;
+      height: $imageGallerySize + 20px;
+      margin: 0 0 0 0;
+      @media (max-width: 1050px) {
+        width: ($imageGallerySize - $firstStep) * 2 + 80px;
+        height: $imageGallerySize - $firstStep + 20px;
+      }
+      @media (max-width: 880px) {
+        width: ($imageGallerySize - $secondStep) * 2 + 80px;
+        height: $imageGallerySize - $secondStep + 20px;
+      }
+      @media (max-width: 770px) {
+        width: $imageGallerySize;
+        height: $imageGallerySize + 20px;
+      }
+      @media (max-width: 470px) {
+        width: $imageGallerySize - $thirdStep;
+        height: $imageGallerySize - $thirdStep + 20px;
+      }
+
+      .image {
+        &::before {
+          @include falseElementSizesGallery(25);
+          @include centerFalseElement;
+          border: 7px solid rgba(255, 255, 255, 0.8);
+        }
+
+        &::after {
+          @include falseElementSizesGallery(40);
+          @include centerFalseElement;
+          border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+
+        img {
+          width: $imageGallerySize;
+          height: $imageGallerySize;
+          border-radius: 50%;
+          margin: 0 20px;
+          @media (max-width: 1050px) {
+            width: $imageGallerySize - $firstStep;
+            height: $imageGallerySize - $firstStep;
+          }
+          @media (max-width: 880px) {
+            width: $imageGallerySize - $secondStep;
+            height: $imageGallerySize - $secondStep;
+          }
+          @media (max-width: 770px) {
+            width: $imageGallerySize;
+            height: $imageGallerySize;
+            margin: auto;
+          }
+          @media (max-width: 470px) {
+            width: $imageGallerySize - $thirdStep;
+            height: $imageGallerySize - $thirdStep;
+          }
+        }
+      }
+    }
+
+    .comment {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 10px;
+
+      .directionForPictures {
+        @include fontRestInfo;
+        text-align: right;
+        margin-left: 10px;
+      }
+    }
+
+  }
+}
+
+

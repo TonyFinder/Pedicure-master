@@ -5,11 +5,11 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {Footer} from '../Footer/Footer';
 import {Price} from '../Price/Price';
 import {Route, Routes} from 'react-router-dom';
-import {GoodsForSale} from '../GoodsForSale/GoodsForSale';
 import {Training} from '../Training/Training';
 import {Helmet} from 'react-helmet-async';
 import {ModalUp} from '../common/ModalUp/ModalUp';
 import {Online} from '../Online/Online';
+import { Sliders } from '../Sliders/Sliders';
 
 const theme = createTheme({
     palette: {
@@ -37,7 +37,8 @@ export const App = () => {
                 <Route path="/" element={<Online/>}/>
                 <Route path="/training" element={<Training/>}/>
                 <Route path="/price" element={<Price/>}/>
-                <Route path="/goods" element={<GoodsForSale/>}/>
+                <Route path="/sliders" element={<Sliders/>}/>
+                {/*<Route path="/goods" element={<GoodsForSale/>}/>*/}
             </Routes>
         </div>
         <Footer/>
