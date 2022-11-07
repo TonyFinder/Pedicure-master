@@ -1,0 +1,54 @@
+@import "src/data/mixins";
+@import "src/data/variables";
+
+.innerContainer {
+  @include innerContainerWithShadow;
+  @include flexCenter;
+  flex-direction: column;
+  width: 350px;
+  @media (max-width: 1200px) {
+    width: 450px;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
+  }
+
+  .title {
+    @include fontTitle;
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  .price {
+    @include fontRestInfo;
+    font-size: 26px;
+    //font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .bulletBlock {
+    margin-bottom: 20px;
+
+    .bullet {
+      @include fontDescription;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+
+  .additions {
+    margin-bottom: 20px;
+
+    .addition {
+      @include fontDescription;
+      text-align: center;
+      font-weight: 800;
+      margin: 20px 0;
+    }
+  }
+
+  .button {
+    margin-bottom: 20px;
+  }
+}

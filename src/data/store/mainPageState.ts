@@ -208,9 +208,11 @@ export const introductionValues = {
         },
         ]
     },
-    buy: {
-        header: 'Только один тариф',
+    buy: [{
+        id: 1,
+        header: 'Магия педикюра',
         price: '5999 рублей',
+        link: 'https://pedicure-cabinet.online/register',
         bullet: [
                     {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                     {id: 2, value: '- Обратная связь'},
@@ -221,8 +223,57 @@ export const introductionValues = {
                 {id: 1, value: 'Продажи временно приостановлены'},
                 {id: 2, value: "Возобновление продаж курса будет в сентябре!"},
             ],
+        additions: [
+            {id: 1, value: '+ Доступ к МК "Плёнки" на 60 дней'},
+            {id: 2, value: '+ Доступ к МК "Слайдеры" на 60 дней'},
+        ]
 
-    }
+    },
+    {
+        id: 2,
+        header: 'МК "Плёнки"',
+        price: '1999 рублей',
+        link: 'https://pedicure-cabinet.online/wraps',
+        bullet: [
+                    {id: 1, value: '- Доступ 60 дней с момента оплаты'},
+                    {id: 2, value: '- Обратная связь'},
+                    {id: 3, value: '- Сертификат'},
+                    {id: 4, value: '- Обучение на GetCourse'},
+                ],
+        zaglushka: [
+                {id: 1, value: 'Продажи временно приостановлены'},
+                {id: 2, value: "Возобновление продаж курса будет в сентябре!"},
+            ],
+        additions: [
+            {id: 1, value: 'Подготовка плёнок'},
+            {id: 2, value: 'Установка плёнок'},
+            {id: 3, value: 'Снятие плёнок'},
+            {id: 4, value: 'Одна модель. Две ножки'},
+        ]
+
+    },
+    {
+        id: 3,
+        header: ' МК "Слайдеры"',
+        price: '1999 рублей',
+        link: 'https://pedicure-cabinet.online/sliders',
+        bullet: [
+                    {id: 1, value: '- Доступ 60 дней с момента оплаты'},
+                    {id: 2, value: '- Обратная связь'},
+                    {id: 3, value: '- Сертификат'},
+                    {id: 4, value: '- Обучение на GetCourse'},
+                ],
+        zaglushka: [
+                {id: 1, value: 'Продажи временно приостановлены'},
+                {id: 2, value: "Возобновление продаж курса будет в сентябре!"},
+            ],
+        additions: [
+            {id: 1, value: 'Покрытие ногтей гель-лаком'},
+            {id: 2, value: 'Установка слайдеров'},
+            {id: 3, value: 'Одна модель. Две ножки'},
+        ]
+    },
+    ]
 }
 
 export type IntroductionValuesType = typeof introductionValues

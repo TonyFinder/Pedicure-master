@@ -3,41 +3,17 @@
 
 .container {
   @include componentContainer;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   min-height: auto;
   margin: 50px 0;
+  max-width: unset;
 
-  .innerContainer {
-    @include innerContainerWithShadow;
-    @include flexCenter;
+  @media (max-width: 1200px) {
     flex-direction: column;
-
-    .title {
-      @include fontTitle;
-      font-size: 32px;
-      font-weight: bolder;
-    }
-    .price {
-      @include fontRestInfo;
-      font-size: 26px;
-      //font-style: italic;
-      font-weight: 500;
-      margin-bottom: 20px;
-    }
-
-    .bulletBlock {
-      margin-bottom: 20px;
-      .bullet {
-        @include fontDescription;
-        text-align: center;
-        margin: 20px 0;
-      }
-    }
-
-    .button {
-      margin-bottom: 20px;
-    }
   }
+
 }
 
 
