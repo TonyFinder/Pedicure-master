@@ -6,6 +6,7 @@ import React from 'react';
 type BuyPropsType = {
     header: string
     price: string
+    sale?: string
     additions?: {
         id: number
         value: string
@@ -18,7 +19,7 @@ type BuyPropsType = {
 }
 
 export const Offer: React.FC<BuyPropsType> = (
-    {header, price, bullets, additions, link}
+    {header, price, sale, bullets, additions, link}
 ) => {
 
     return (
@@ -27,6 +28,9 @@ export const Offer: React.FC<BuyPropsType> = (
                         className={styles.title}>{header.toUpperCase()}</Typography>
             <Typography variant={'h2'}
                         className={styles.price}>{price}</Typography>
+            <Typography variant={'h2'}
+                        className={styles.sale}>{sale}</Typography>
+
 
             <div className={styles.bulletBlock}>
                 {bullets.map(bullet => (

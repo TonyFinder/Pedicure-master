@@ -212,7 +212,9 @@ export const introductionValues = {
         id: 1,
         header: 'Магия педикюра',
         price: '5999 рублей',
-        link: 'https://pedicure-cabinet.online/register',
+        sale: '3599 рублей',
+        // link: 'https://pedicure-cabinet.online/register',
+        link: 'https://pedicure-cabinet.online/sale_magic',
         bullet: [
                     {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                     {id: 2, value: '- Обратная связь'},
@@ -233,7 +235,9 @@ export const introductionValues = {
         id: 2,
         header: 'МК "Плёнки"',
         price: '1999 рублей',
-        link: 'https://pedicure-cabinet.online/wraps',
+        sale: '1199 рублей',
+        // link: 'https://pedicure-cabinet.online/wraps',
+        link: 'https://pedicure-cabinet.online/sale_wraps',
         bullet: [
                     {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                     {id: 2, value: '- Обратная связь'},
@@ -256,7 +260,9 @@ export const introductionValues = {
         id: 3,
         header: ' МК "Слайдеры"',
         price: '1999 рублей',
-        link: 'https://pedicure-cabinet.online/sliders',
+        sale: '1199 рублей',
+        // link: 'https://pedicure-cabinet.online/sliders',
+        link: 'https://pedicure-cabinet.online/sale_sliders',
         bullet: [
                     {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                     {id: 2, value: '- Обратная связь'},
