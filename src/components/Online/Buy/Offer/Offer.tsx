@@ -28,8 +28,8 @@ export const Offer: React.FC<BuyPropsType> = (
                         className={styles.title}>{header.toUpperCase()}</Typography>
             <Typography variant={'h2'}
                         className={styles.price}>{price}</Typography>
-            <Typography variant={'h2'}
-                        className={styles.sale}>{sale}</Typography>
+            {/*<Typography variant={'h2'}
+                        className={styles.sale}>{sale}</Typography>*/}
 
 
             <div className={styles.bulletBlock}>

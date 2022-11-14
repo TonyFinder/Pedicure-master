@@ -24,13 +24,13 @@
     position: relative;
 
     //Only for sale
-    font-size: 22px;
-    //font-size: 26px;
+    //font-size: 22px;
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 20px;
 
     //Only for sale
-    &::after {
+    /*&::after {
       position: absolute;
       content: '';
       left: -10px; right: -10px;
@@ -39,10 +39,10 @@
       background: red;
       height: 2px;
       transform: rotate(-4deg);
-    }
+    }*/
   }
   //Only for sale
-  .sale {
+  /*.sale {
     @include fontRestInfo;
     position: relative;
     font-size: 26px;
@@ -58,7 +58,7 @@
       content: '- 40%';
       color: red;
     }
-  }
+  }*/
 
   .bulletBlock {
     margin-bottom: 20px;
