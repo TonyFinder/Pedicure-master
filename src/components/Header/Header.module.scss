@@ -12,7 +12,7 @@
       height: $appHeaderWidthFirst;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       @media (max-width: 600px) {
         min-height: $appHeaderWidthSecond;
         height: $appHeaderWidthSecond;
@@ -26,6 +26,10 @@
           }
         }
       }
+      :hover {
+        color: #dedede;
+    }
+
     }
   }
 

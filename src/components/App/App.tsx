@@ -35,8 +35,8 @@ export const App = () => {
         <div className={styles.appContainer}>
             <Routes>
                 <Route path="/" element={<Online/>}/>
-                <Route path="/training" element={<Training/>}/>
-                <Route path="/price" element={<Price/>}/>
+                {/*<Route path="/training" element={<Training/>}/>*/}
+                {/*<Route path="/price" element={<Price/>}/>*/}
                 <Route path="/sliders" element={<Sliders/>}/>
                 {/*<Route path="/goods" element={<GoodsForSale/>}/>*/}
             </Routes>
