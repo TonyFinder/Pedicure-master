@@ -237,8 +237,8 @@ export const introductionValues = {
         sale: '4999 рублей',
         discount: '- 17%',
         // discount: '- 40% Чёрная Пятница',
-        // link: 'https://pedicure-cabinet.online/register',
-        link: 'https://pedicure-cabinet.online/sale_magic',
+        link: 'https://pedicure-cabinet.online/register',
+        // link: 'https://pedicure-cabinet.online/sale_magic',
         bullet: [
             {id: 1, value: '- Доступ 60 дней с момента оплаты'},
             // {id: 1, value: '- Только в Чёрную Пятницу доступ 100 дней вместо 60 дней'},
@@ -263,8 +263,8 @@ export const introductionValues = {
             sale: '1599 рублей',
             discount: '- 20%',
             // discount: '- 40% Чёрная Пятница',
-            // link: 'https://pedicure-cabinet.online/wraps',
-            link: 'https://pedicure-cabinet.online/sale_wraps',
+            link: 'https://pedicure-cabinet.online/wraps',
+            // link: 'https://pedicure-cabinet.online/sale_wraps',
             bullet: [
                 {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                 // {id: 1, value: '- Только в Чёрную Пятницу доступ 100 дней вместо 60 дней'},
@@ -291,8 +291,8 @@ export const introductionValues = {
             sale: '1599 рублей',
             discount: '- 20%',
             // discount: '- 40% Чёрная Пятница',
-            // link: 'https://pedicure-cabinet.online/sliders',
-            link: 'https://pedicure-cabinet.online/sale_sliders',
+            link: 'https://pedicure-cabinet.online/sliders',
+            // link: 'https://pedicure-cabinet.online/sale_sliders',
             bullet: [
                 {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                 // {id: 1, value: '- Только в Чёрную Пятницу доступ 100 дней вместо 60 дней'},
