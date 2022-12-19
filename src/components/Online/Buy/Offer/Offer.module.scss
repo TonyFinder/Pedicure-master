@@ -24,15 +24,15 @@
     position: relative;
 
     //Only for sale
-    //font-size: 22px;
-    //font-weight: 500;
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 500;
+    //font-size: 26px;
+    //font-weight: 700;
     margin-bottom: 20px;
-    color: #b01a05;
+    //color: #b01a05;
 
     //Only for sale
-    /*&::after {
+    &::after {
       position: absolute;
       content: '';
       left: -10px; right: -10px;
@@ -41,7 +41,7 @@
       background: red;
       height: 2px;
       transform: rotate(-4deg);
-    }*/
+    }
   }
   //Only for sale
   .sale {
@@ -70,10 +70,10 @@
       text-align: center;
       margin: 20px 0;
     }
-    /*:first-child {
+    :first-child {
       color: darkred;
       font-weight: 700;
-    }*/
+    }
   }
 
   .additions {

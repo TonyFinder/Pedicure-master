@@ -30,12 +30,12 @@ export const Offer: React.FC<BuyPropsType> = (
             <Typography variant={'h2'}
                         className={styles.price}>{price}</Typography>
 
-            {/*<Typography variant={'h2'}
+            <Typography variant={'h2'}
                         className={styles.sale}>{sale}
 
                 <div className={styles.saleDiscount}>{discount}</div>
 
-            </Typography>*/}
+            </Typography>
 
 
             <div className={styles.bulletBlock}>
