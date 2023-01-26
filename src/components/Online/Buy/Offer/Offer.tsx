@@ -28,7 +28,7 @@ export const Offer: React.FC<BuyPropsType> = (
             <Typography variant={'h1'}
                         className={styles.title}>{header.toUpperCase()}</Typography>
             <Typography variant={'h2'}
-                        className={styles.price}>{price}</Typography>
+                        className={sale ? styles.priceWithLane : styles.price}>{price}</Typography>
 
             <Typography variant={'h2'}
                         className={styles.sale}>{sale}

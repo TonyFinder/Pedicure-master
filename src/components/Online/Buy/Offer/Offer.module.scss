@@ -22,14 +22,17 @@
   .price {
     @include fontRestInfo;
     position: relative;
+    font-size: 26px;
+    font-weight: 700;
+    color: #b01a05;
+  }
 
-    //Only for sale
+  .priceWithLane {
+    @include fontRestInfo;
+    position: relative;
     font-size: 22px;
     font-weight: 500;
-    //font-size: 26px;
-    //font-weight: 700;
     margin-bottom: 20px;
-    //color: #b01a05;
 
     //Only for sale
     &::after {
@@ -43,6 +46,7 @@
       transform: rotate(-4deg);
     }
   }
+
   //Only for sale
   .sale {
     @include fontRestInfo;
