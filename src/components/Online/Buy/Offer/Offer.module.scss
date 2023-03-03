@@ -22,7 +22,7 @@
   .price {
     @include fontRestInfo;
     position: relative;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     color: #b01a05;
   }
@@ -54,7 +54,7 @@
     font-size: 26px;
     color: red;
     font-weight: 700;
-    margin-top: 30px;
+    //margin-top: 30px;
     margin-bottom: 20px;
     .saleDiscount {
       position: absolute;
@@ -74,10 +74,10 @@
       text-align: center;
       margin: 20px 0;
     }
-    :first-child {
+    /*:first-child {
       color: darkred;
       font-weight: 700;
-    }
+    }*/
   }
 
   .additions {

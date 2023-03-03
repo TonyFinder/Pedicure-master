@@ -12,8 +12,8 @@ export const Buy = () => {
                 <Offer key={offer.id}
                        header={offer.header}
                        price={offer.price}
-                       sale={offer.sale}
-                       discount={offer.discount}
+                       // sale={offer.sale}
+                       // discount={offer.discount}
                        bullets={offer.bullet}
                        link={offer.link}
                        additions={offer.additions}/>
