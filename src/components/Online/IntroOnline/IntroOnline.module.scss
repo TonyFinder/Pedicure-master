@@ -15,12 +15,12 @@
 
     .title {
       @include fontTitle;
-      font-size: 32px;
+      font-size: 40px;
       font-weight: bolder;
     }
     .onlineHeader {
       @include fontRestInfo;
-      font-size: 20px;
+      font-size: 30px;
       font-style: italic;
       font-weight: normal;
       margin-bottom: 20px;
@@ -33,9 +33,11 @@
 
       .bullet {
         @include fontTitleForInnerBlock;
+        font-size: 26px;
       }
       .bulletInfo {
         @include fontDescription;
+        font-size: 18px;
         text-align: center;
       }
     }
