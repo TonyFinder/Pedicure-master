@@ -10,6 +10,7 @@ import {Helmet} from 'react-helmet-async';
 import {ModalUp} from '../common/ModalUp/ModalUp';
 import {Online} from '../Online/Online';
 import { Sliders } from '../Sliders/Sliders';
+import {Order} from '../Order/Order';
 
 const theme = createTheme({
     palette: {
@@ -38,6 +39,7 @@ export const App = () => {
                 {/*<Route path="/training" element={<Training/>}/>*/}
                 {/*<Route path="/price" element={<Price/>}/>*/}
                 <Route path="/sliders" element={<Sliders/>}/>
+                <Route path="/order" element={<Order/>}/>
                 {/*<Route path="/goods" element={<GoodsForSale/>}/>*/}
             </Routes>
         </div>
