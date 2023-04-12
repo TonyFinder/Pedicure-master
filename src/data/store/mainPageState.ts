@@ -289,7 +289,7 @@ export const introductionValues = {
             header: ' МК "Слайдеры"',
             price: '1999 рублей',
             sale: '1299 рублей',
-            // discount: '- 20% до 1 марта',
+            // discount: '- 20% до 1 мартав',
             discount: '- 35%',
             // link: 'https://pedicure-cabinet.online/sliders',
             link: 'https://pedicure-cabinet.online/sale_sliders',
