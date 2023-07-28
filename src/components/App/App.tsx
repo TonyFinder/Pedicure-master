@@ -10,7 +10,9 @@ import {Helmet} from 'react-helmet-async';
 import {ModalUp} from '../common/ModalUp/ModalUp';
 import {Online} from '../Online/Online';
 import { Sliders } from '../Sliders/Sliders';
-import {Order} from '../Order/Order';
+import { Info } from '../Info/Info';
+import {Contacts} from '../common/Contacts/Contacts';
+import {ContactsMobile} from '../common/ContactsMobile/ContactsMobile';
 
 const theme = createTheme({
     palette: {
@@ -36,13 +38,16 @@ export const App = () => {
         <div className={styles.appContainer}>
             <Routes>
                 <Route path="/" element={<Online/>}/>
-                {/*<Route path="/training" element={<Training/>}/>*/}
+                <Route path="/training" element={<Training/>}/>
                 {/*<Route path="/price" element={<Price/>}/>*/}
                 <Route path="/sliders" element={<Sliders/>}/>
-                <Route path="/order" element={<Order/>}/>
+                <Route path="/info" element={<Online/>}/>
+                {/*<Route path="/info" element={<Info/>}/>*/}
                 {/*<Route path="/goods" element={<GoodsForSale/>}/>*/}
             </Routes>
         </div>
+        {/*<Contacts/>*/}
+        <ContactsMobile/>
         <Footer/>
         <ModalUp speed={20}/>
     </ThemeProvider>

@@ -28,7 +28,7 @@ export const Header = () => {
                     <Button color={'inherit'} size={'large'} style={{padding: 2}}>Онлайн-курсы</Button>
                 </Link>
                 <Link to="/sliders">
-                    <Button color={'inherit'} size={'large'} style={{padding: 2}}>Слайдеры</Button>
+                    <Button color={'inherit'} size={'large'} style={{padding: 2}}>Магазин</Button>
                 </Link>
 
 

@@ -8,6 +8,7 @@ import {ScrollToTop} from './components/common/ScrollToTop/ScrollToTop';
 import {Provider} from 'react-redux';
 import {store} from './data/store/store';
 import { HelmetProvider } from 'react-helmet-async';
+import {Contacts} from './components/common/Contacts/Contacts';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

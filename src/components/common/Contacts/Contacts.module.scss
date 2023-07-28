@@ -1,9 +1,10 @@
-@import "../../../data/mixins";
-@import "../../../data/variables";
+@import "src/data/variables";
+@import "src/data/mixins";
 
 .container {
+  border: 1px solid red;
   position: fixed;
-  bottom: $appHeaderWidthFirst; left: 15px;
+  bottom: $appHeaderWidthFirst; right: 15px;
   border-radius: 50%;
   .icon {
     font-size: 45px;

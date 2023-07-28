@@ -1,0 +1,14 @@
+@import "src/data/variables";
+@import "src/data/mixins";
+
+.container {
+  position: fixed;
+  bottom: $appHeaderWidthFirst; right: 15px;
+  color: transparent;
+  //border-radius: 50%;
+  /*.icon {
+    font-size: 45px;
+    color: $secondaryColor;
+    border-radius: 50%;
+  }*/
+}
