@@ -8,11 +8,6 @@ export const Info = () => {
             <div className={styles.innerContainer}>
                 <Typography variant={'h2'}
                             className={styles.title}>ИНФОРМАЦИЯ</Typography>
-{/*
-                <div className={styles.imageOnTop}>
-                    <img src={mainPageImages.introduction} alt={'introduction'}/>
-                </div>
-*/}
             </div>
         </div>
     )

@@ -27,7 +27,7 @@ export const App = () => {
 
     return <ThemeProvider theme={theme}>
         <Helmet>
-            <title>Pedicure</title>
+            <title>Педикюр Онлайн курсы Обучение Плёнки Слайдеры - </title>
             <meta
                 name="description"
                 content="Педикюр онлайн курс, обучение, педикюр, педикюр лето, лучший педикюр, идеи педикюра, обучение педикюр, онлайн обучение педикюр, педикюр 2022, pedicure, pedicure courses"/>
@@ -47,7 +47,7 @@ export const App = () => {
             </Routes>
         </div>
         {/*<Contacts/>*/}
-        <ContactsMobile/>
+        {/*<ContactsMobile/>*/}
         <Footer/>
         <ModalUp speed={20}/>
     </ThemeProvider>
