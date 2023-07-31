@@ -19,7 +19,7 @@ export const mainPageImages = {anna, introduction: nails7}
 export const icons = [
     {id: 'whatsApp', image: whatsApp, url: 'https://wa.me/79510215025'},
     {id: 'instagram', image: instagram, url: 'https://www.instagram.com/pedicure.cabinet'},
-    {id: 'vk', image: vk, url: 'https://vk.com/pedicure.cabinet'},
+    // {id: 'vk', image: vk, url: 'https://vk.com/pedicure.cabinet'},
     {id: 'telegram', image: telegram, url: 'https://t.me/PedicureCabinet'},
 ]
 export const goodsImages = {

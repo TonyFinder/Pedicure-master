@@ -10,42 +10,34 @@
 
     .title {
       @include fontTitle;
+      margin-bottom: 30px;
+      @media (max-width:400px) {
+        font-size: 20px;
+      }
     }
 
-    .imageOnTop {
-      position: absolute;
-      right: -10%;
-      top: -20%;
-      height: $imageOnTopInitialSize;
-      @media (max-width: 880px) {
-        right: 0;
-        top: -11%;
-        height: $imageOnTopInitialSize * 0.74;
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+      @media (max-width:400px) {
+        flex-direction: column;
+        align-items: center;
       }
-      @media (max-width: 740px) {
-        right: 0;
-        top: -11%;
-        height: $imageOnTopInitialSize * 0.55;
-      }
-      @media (max-width: 570px) {
-        display: none;
+      .wrapper {
+        a {
+          .button {
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+        }
       }
 
-      &::before {
-        @include falseElementSizesAboutMe($imageOnTopBigCircle);
-        @include centerFalseElement;
-        border: 5px solid rgba(255, 255, 255, 0.8);
-      }
+    }
 
-      &::after {
-        @include falseElementSizesAboutMe($imageOnTopSmallCircle);
-        @include centerFalseElement;
-        border: 1px solid rgba(255, 255, 255, 0.8);
-      }
-
-      img {
-        @include falseElementSizesAboutMe($imageOnTopInitialSize);
-        border-radius: 50%;
+    .additionalInfo {
+      @include fontDescription;
+      @media (max-width:400px) {
+        font-size: 14px;
       }
     }
   }

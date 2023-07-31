@@ -41,7 +41,7 @@ export const App = () => {
                 <Route path="/training" element={<Training/>}/>
                 {/*<Route path="/price" element={<Price/>}/>*/}
                 <Route path="/sliders" element={<Sliders/>}/>
-                <Route path="/info" element={<Online/>}/>
+                <Route path="/info" element={<Info/>}/>
                 {/*<Route path="/info" element={<Info/>}/>*/}
                 {/*<Route path="/goods" element={<GoodsForSale/>}/>*/}
             </Routes>
