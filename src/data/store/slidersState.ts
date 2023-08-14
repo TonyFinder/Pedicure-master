@@ -8,9 +8,9 @@ import nails02s from '../../images/sliders/s2.jpg';
 import nails06s from '../../images/sliders/s6.jpg';
 
 export const slidersValues = {
-    header: 'Слайдеры',
+    header: 'Слайдеры и плёнки',
     gallery: {
-        header: 'Прозрачная основа, наносятся на любой фон!',
+        header: 'Переходите по ссылке ниже для заказа! Бесплатная доставка!',
         images: [
             {id: 1, image: nails03s},
             {id: 2, image: nails02s},

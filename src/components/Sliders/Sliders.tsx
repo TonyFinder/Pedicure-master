@@ -15,7 +15,7 @@ export const Sliders = () => {
                             className={styles.title}>{slidersValues.header.toUpperCase()}</Typography>
                 <Typography variant={'h4'}
                             className={styles.title}>{slidersValues.gallery.header}</Typography>
-                <a href={'https://forms.gle/PMY7pAwHaN5RpETa8'} target='_blank' rel="noreferrer">
+                <a href={'https://shop.pedicure-cabinet.ru'} target='_blank' rel="noreferrer">
                     <Button className={styles.button}>
                         Заказать
                     </Button>
