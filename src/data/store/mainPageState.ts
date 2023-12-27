@@ -234,9 +234,9 @@ export const introductionValues = {
         id: 1,
         header: 'Магия педикюра',
         price: '6999 рублей',
-        sale: '4499 рублей',
+        sale: '5999 рублей',
         // discount: '- 33% до 1 марта',
-        discount: '- 35%',
+        discount: '- 15%',
         // link: 'https://pedicure-cabinet.online/register',
         link: 'https://pedicure-cabinet.online/sale_magic',
         bullet: [
