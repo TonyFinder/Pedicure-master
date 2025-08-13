@@ -307,7 +307,7 @@ export const introductionValues = {
             additions: [
                 {id: 1, value: 'Покрытие ногтей гель-лаком'},
                 {id: 2, value: 'Установка слайдеров'},
-                {id: 3, value: 'Одна модель. Две ножки'},
+                {id: 3, value: 'Одна модель. Две ножки!!'},
             ]
         },
     ]
