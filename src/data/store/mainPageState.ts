@@ -238,7 +238,7 @@ export const introductionValues = {
         // discount: '- 33% до 1 марта',
         discount: '- 15%',
         // link: 'https://pedicure-cabinet.online/register',
-        link: 'https://pedicure-cabinet.online/sale_magic',
+        link: 'https://online.pedicure-cabinet.ru',
         bullet: [
             // {id: 1, value: '- Доступ 60 дней с момента оплаты'},
             {id: 1, value: '- Доступ 100 дней вместо 60 дней'},
@@ -264,7 +264,7 @@ export const introductionValues = {
             // discount: '- 20% до 1 марта',
             // discount: '- 20%',
             // link: 'https://pedicure-cabinet.online/wraps',
-            link: 'https://pedicure-cabinet.online/sale_wraps',
+            link: 'https://online.pedicure-cabinet.ru',
             bullet: [
                 // {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                 {id: 1, value: '- Доступ 100 дней вместо 60 дней'},
@@ -292,7 +292,7 @@ export const introductionValues = {
             // discount: '- 20% до 1 мартав',
             // discount: '- 20%',
             // link: 'https://pedicure-cabinet.online/sliders',
-            link: 'https://pedicure-cabinet.online/sale_sliders',
+            link: 'https://online.pedicure-cabinet.ru',
             bullet: [
                 // {id: 1, value: '- Доступ 60 дней с момента оплаты'},
                 {id: 1, value: '- Доступ 100 дней вместо 60 дней'},
